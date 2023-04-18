@@ -1,0 +1,313 @@
+   
+*{
+  margin:0;
+  padding:0;
+}
+html, body{
+   margin:0;
+  padding:0;
+  height: 100%;
+ width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  top: 0px;
+  position: absolute;
+  margin:0px;
+  width: 100vw;
+  padding-top: 0px;
+  background-color: black;
+}
+
+.nav-list{
+  top: 0;
+  left: 20px;
+  background-color: black;    
+}
+
+.topnav{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+  top: 10px;
+}
+
+
+
+/* css transitions that makes the text change when you hover on them. */
+
+.topnav a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+
+.topnav 
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+.logo-img {
+  position: absolute;
+  display: none;
+  top: 0px;
+}
+
+.cart{
+     top: 15px;
+  right: 50%;
+      width: 30px;
+  height:30px;
+  margin-right: 15px;
+}
+
+
+.account{
+     width: 30px;
+  height:30px;  
+  top: 0%;
+}
+
+
+.nav-icons{
+  float: right;
+  display: inline-block;
+  background-color: black;
+  }
+
+.dropdown{
+  top: 0%;
+  right: 4%;
+  display: inline-block;
+  position: absolute;
+  background-color: black;
+   width: 30px;
+  height:30px; 
+}
+
+.dropdown-options{
+  display: none;
+  overflow: auto;
+  font-size: 15px;
+  
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-options{
+  display: block;
+   position:absolute;
+  z-index: 100;
+  
+  background-color: black;
+}
+
+.flex-container {
+  position: absolute;
+    display:flex;
+  flex-wrap: wrap;
+  top: 200px;
+  justify-content: center;
+  width: 100vw;
+  bottom: 300px;
+  height: 100vh;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+}
+.item1{
+  position: absolute;
+   width: 90vw;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*
+.item2{
+   width: 30vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item3{
+  width: 30vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item4{
+  width: 30vw;
+    height:70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+*/
+  
+.body{
+  display: flex;
+ margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 200px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  height: 150px;
+  background-color: grey;
+  left: 0;
+  right:0;
+  top:1200px;
+  overflow-y:hidden;
+  position: absolute;
+  background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   animation: move-upwards 5s linear infinite;
+}
+/* inconjuntion with animation the keyframe give the background image motion.*/
+@keyframes move-upwards {
+  0% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+
+.contact{
+  top: 0;
+  position: absolute;
+}
+
+.contact-links{
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: flex-start;
+  gap: 55px;
+  justify-content: space-evenly;
+}
+
+.fb{
+  position: absolute;
+}
+.hover-fb {
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.fb:hover .hover-fb{
+  display: inline;
+}
+
+.whats{
+  position: relative;
+}
+.hover-whats{
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.whats:hover .hover-whats{
+  display: inline;
+}
+
+.ig{
+  position: relative;
+}
+
+.ig img{
+  width: 45px;
+  height: 45px;
+}
+.hover-ig{
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.ig:hover .hover-ig{
+  display: inline;
+}
+
+/*media queries*/
+@media only screen and (max-width:12000px) { 
+/* for laptops*/
+
+.item1{
+   width: 90vw;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+
+}

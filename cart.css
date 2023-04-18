@@ -1,0 +1,201 @@
+   
+/**{
+    
+}*/
+html, body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.nav-bar {
+  top: 0px;
+  position: absolute;
+  margin:0px;
+  width: 100%;
+  padding-top: 0px;
+  background-color: black;
+}
+
+.nav-list{
+  top: 0;
+  left: 20px;
+    background-color: black;
+}
+
+.topnav{
+  width: 100%;
+    background-color: black;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+  top: 10px;
+}
+
+
+/*.topnav a:hover {
+  border-bottom: 2px solid blue;
+  transition: width 0.30s ease 0.12s;
+  color: blue;
+}*/
+
+
+.topnav a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+
+.topnav 
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+.logo-img {
+  position: absolute;
+  display: none;
+  top: 0px;
+}
+.cart{
+  display: flex;
+  align-items: right;
+  float: right;
+  right: 5%;
+  top: 15px;
+  right: 30%;
+  position: right;
+    width: 30px;
+  height:30px;
+}
+/*
+.cart{
+  display: flex;
+  align-items: right;
+  float: right;
+  top: 15px;
+  right: 5%;
+  position: right;
+    width: 30px;
+  height:30px;
+}*/
+
+.account{
+  width: 30px;
+  height:30px;  
+  right: 30%;  
+}
+
+
+.nav-icons{
+  float: right;
+  display: inline-block;
+    }
+
+.dropdown{
+
+  right: 4%;
+  display: inline-block;
+  position: absolute;
+     width: 30px;
+  height:30px; 
+  background-color: black;
+}
+
+.dropdown-options{
+  display: none;
+  overflow: auto;
+  font-size: 15px;
+  background-color: black;
+  }
+
+.dropdown:hover .dropdown-options{
+  display: block;
+   position:absolute;
+  z-index: 100;
+  background-color: black;
+ }
+
+
+.main-page {
+  display: flex;
+  top: 200px;
+  padding: 150px 0px;
+  width: 100%;
+  
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  height: 150px;
+  background-color: grey;
+  left: 0;
+  right:0;
+  top:1200px;
+  overflow-y:hidden;
+  position: absolute;
+  background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   animation: move-upwards 5s linear infinite;
+}
+
+@keyframes move-upwards {
+  0% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}

@@ -1,0 +1,348 @@
+   
+*{
+  margin:0;
+  padding:0;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+   background-color: white; 
+}
+
+.nav-bar {
+  background-color: black;
+  top: 0;
+  position: absolute;
+  margin:0px;
+  width: 100%;
+  padding-top: 0px;
+}
+
+.nav-list{
+  top: 0;
+  left: 20px;
+  background-color: black;
+}
+
+.topnav{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  background-color: black;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+  top: 10px;
+}
+
+
+/* css transitions that makes the text change when you hover on them. */
+.topnav a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+
+.topnav 
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+.logo-img {
+  position: absolute;
+  display: none;
+}
+
+.cart{
+  display: flex;
+  align-items: right;
+  float: right;
+  right: 30%;
+  top: 15px;
+  position: right;
+    width: 30px;
+  height:30px;
+}
+
+
+
+#account{
+     width: 30px;
+  height:30px; 
+  margin-left: ; 
+}
+
+
+.nav-icons{
+  float: right;
+  display: inline-block;
+  background-color: black;
+  }
+
+.dropdown{
+  right: 4%;
+  display: inline-block;
+  position: absolute;
+  background-color: black;
+   width: 30px;
+  height:30px; 
+}
+
+.dropdown-options{
+  display: none;
+  overflow: auto;
+  font-size: 15px;
+  
+  background-color: black;
+}
+
+
+.dropdown:hover .dropdown-options{
+  display: block;
+   position:absolute;
+  z-index: 100;
+  
+  background-color: black;
+}
+
+/*Body*/
+.flex-container {
+  position: absolute;
+    display: flex;
+  flex-direction: wrap;
+    top: 300px;
+  justify-content: space-around;
+  width: 100vw;
+  bottom: 400px;
+}
+
+.flex-container > div {
+  background-color: black;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+}
+.item1{
+  left: 10%;
+   position:absolute;
+   display: flex;
+   width: 40vw;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("images/pachoeko-post-2023_03_14_21_57-3.jpg");
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item2{
+  align-items: center;
+  background-color: black;
+  color: white;
+  top: 300px;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+   width: 40vw;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item2 p{
+  font-size: 1.5rem;
+}
+
+.body{
+  display: flex;
+ margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 200px;
+}
+
+
+/* footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  height: 150px;
+  background-color: grey;
+  left: 0;
+  right:0;
+  top:1500px;
+  overflow-y:hidden;
+  position: absolute;
+  background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   animation: move-upwards 5s linear infinite;
+}
+
+/* inconjuntion with animation the keyframe give the background image motion.*/
+@keyframes move-upwards {
+  0% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+
+.contact{
+  top: 0;
+  position: absolute;
+}
+
+.contact-links{
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: flex-start;
+  gap: 55px;
+  justify-content: space-evenly;
+}
+
+.fb{
+  position: absolute;
+}
+.hover-fb {
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.fb:hover .hover-fb{
+  display: inline;
+}
+
+.whats{
+  position: relative;
+}
+.hover-whats{
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.whats:hover .hover-whats{
+  display: inline;
+}
+
+.ig{
+  position: relative;
+}
+
+.ig img{
+  width: 45px;
+  height: 45px;
+}
+.hover-ig{
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.ig:hover .hover-ig{
+  display: inline;
+}
+
+/* media Queries*/
+@media only screen and (max-width: 800px){
+  .item2{
+    top: 200px;
+    height: 80vh;
+  }
+
+  .item2 p{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width:480px) {
+.item1{
+ top: 0px;
+  width: 70vw;
+  left: 0%;
+}
+
+.item2{
+  right: 0%;
+  margin-right: 0;
+  align-items: center;
+  background-color: black;
+  color: white;
+  top: 200px; 
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+   width: 50vw;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ 
+.item2 p{
+  font-size: 0.5rem;
+}
+
+
+} 

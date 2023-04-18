@@ -1,0 +1,773 @@
+
+*{
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+  margin:0;
+  padding:0;
+}
+html, body{
+   margin:0;
+  padding:0;
+  height: 100%;
+ width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar{
+position:absolute;
+top: 0%;
+width: 100vw;
+  height: 100vh;
+background-image:url("images/hero.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+  
+}
+.nav-bar {
+  top: 0px;
+  position: absolute;
+  margin:0px;
+  width: 100vw;
+  padding-top: 0px; 
+  background-color: transparent;
+}
+
+.nav-list{
+  top: 0;
+  left: 20px;
+  background-color: transparent;    
+}
+
+.topnav{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+  top: 10px;
+}
+
+/* css transitions that makes the text change when you hover on them. */
+
+.topnav a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+
+.topnav 
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+.logo-img {
+  position: absolute;
+  display: none;
+  top: 0px;
+}
+
+.shop{
+  width: 30px;
+  height: 30px;
+  left: 50%;
+}
+.cart{
+  display: flex;
+  align-items: right;
+  float: right;
+  right: 5%;
+  top: 15px;
+  right: 30%;
+  position: right;
+    width: 30px;
+  height:30px;
+}
+
+
+.account{
+     width: 30px;
+  height:30px;  
+top: 0%;
+}
+
+
+.nav-icons{
+  float: right;
+  display: inline-block;
+    }
+
+.dropdown{
+  top: 0%;
+  right: 4%;
+  display: inline-block;
+  position: absolute;
+     width: 30px;
+  height:30px; 
+}
+
+.dropdown-options{
+  display: none;
+  overflow: auto;
+  font-size: 15px;
+  }
+
+.dropdown:hover .dropdown-options{
+  display: block;
+   position:absolute;
+  z-index: 100;
+ }
+
+
+.intro-text{
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.intro-text h1{
+  font-size: 5vw;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.exp{
+  position: absolute;
+  display: flex;
+  flex-direction: 
+  row;
+  color: white;
+  left: 45%;
+  text-decoration: none;
+  width: 20vw;
+}
+.exp a{
+  color: white;
+  text-decoration: none;;
+}
+/* body*/
+.flex-container {
+  top: 600px;
+  position: absolute;
+    display:flex;
+  flex-wrap: wrap;
+    justify-content: space-between;
+  width: 100vw;
+  bottom: 300px;
+  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+}
+.item1{
+  position: relative;
+  left: 10%;
+  float: left;
+  align-self: left;
+   width: 40vw;
+    height: 90vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image:url("images/omotailor-photo-1.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+.item2{
+  font-size: 1.2rem;
+position:relative;
+  float:right;
+  top:0px;
+  right: 4%;
+   width: 44vw;
+    height: 60vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.item2 p{
+  font-size: 1.2rem;
+  
+}
+
+.item3{
+  position: absolute;
+  float: right;
+  right: 7%;
+top: 500px;;
+  width: 45vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-image:url("images/omotailor-photo-3.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.item4{
+  top: 750px;
+  position: absolute;
+   left: 10%;
+  width: 15vw;
+    height: 30vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       background-image:url("images/pachoeko-post-2023_03_14_21_57-1.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+.item5{
+  top: 750px;
+  position: absolute;
+  left:28%;
+  width: 15vw;
+    height: 30vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     background-image:url("images/pachoeko-post-2023_03_14_21_57-2.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.container2{
+  display: flex;
+  position: absolute;
+  top: 1000px;
+  justify-content: center;
+  width: 100vw;
+}
+
+.item6{
+  top: 1000px;
+  position: absolute;
+  align-self: center;
+  float:center;
+   justify-self: center;
+  width: 100vw;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image:url("images/omotailor-post-lady.jpg") ;
+  background-size:cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+.item7{
+  position: absolute;
+  width: 30vw;
+    height:50vh;
+   float: left;
+  left: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 1820px;
+  
+}
+.item8{
+  border: 5px red;
+  position: absolute;
+  float: right;
+    width: 30vw;
+    height:70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 1700px;
+       background-image:url("images/omotailor-post-lady2.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.item9{
+  border: 5px red;
+  position: absolute;
+  float: right;
+  right:3%;
+  width: 30vw;
+    height:70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 1700px;
+   background-image:url("images/omotailor-post-lady1.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+
+.container3{
+  display: flex;
+  position: absolute;
+  top: 2500px;
+  justify-content: center;
+  width: 100vw;
+}
+
+.item10{
+  left: 7%;
+  position: absolute;
+  align-self: left;
+  float:center;
+  background-color: blue;
+  justify-self: center;
+  width: 40vw;
+    height: 35vh;
+  }
+
+.item11{
+  position: absolute;
+  width: 40vw;
+    height:80vh;
+   float: right;
+  right: 10%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image:url("images/omotailor-photo-2023_04_16_09_17.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+    }
+
+
+.item12{
+  border: 5px red;
+  position: absolute;
+  float: left;
+  left: 5%;
+    width: 40vw;
+    height:90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 300px;
+   background-image:url("images/pachoeko-post-2023_03_14_21_57.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.item13{
+  border: 5px red;
+  position: absolute;
+  float: right;
+  right:10%;
+  width: 40vw;
+    height:45vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 650px;
+}
+
+
+  
+.body{
+  display: flex;
+ margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 100px;
+  position: absolute;
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  height: 150px;
+  background-color: grey;
+  left: 0;
+  right:0;
+  top:1200px;
+  overflow-y:hidden;
+  position: absolute;
+  background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   animation: move-upwards 5s linear infinite;
+}
+
+
+/* inconjuntion with animation the keyframe give the background image motion.*/
+@keyframes move-upwards {
+  0% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+.contact{
+  top: 0;
+  position: absolute;
+}
+
+.contact-links{
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: flex-start;
+  gap: 55px;
+  justify-content: space-evenly;
+}
+
+.fb{
+  position: absolute;
+}
+.hover-fb {
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.fb:hover .hover-fb{
+  display: inline;
+}
+
+.whats{
+  position: relative;
+}
+.hover-whats{
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.whats:hover .hover-whats{
+  display: inline;
+}
+
+.ig{
+  position: relative;
+}
+
+.ig img{
+  width: 45px;
+  height: 45px;
+}
+.hover-ig{
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+.ig:hover .hover-ig{
+  display: inline;
+}
+
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+
+.navbar{
+position:absolute;
+top: 0%;
+width: 100vw;
+  height: 70vh;
+}
+
+.item1{
+  left:5%;
+  height:  80vh;
+  width: 45vw;
+}
+  .item2{
+    left:;
+  }
+  .item3{}
+  .item4{
+    top: 600px;
+    left: 6%;
+    width: 18vw;
+  }
+  .item5{
+    top:600px;
+    left: 26%; 
+    width: 18vw;
+  }
+
+  .flex-container{
+    bottom: 150px;
+  }
+
+.container2{
+    top: 800px;
+  
+}
+  .item7{
+    top: 1700px;
+  }
+
+  .item11{
+    height:70vh;
+  }
+
+  .item12{
+    height: 70vh;
+    margin-top: 250px;
+  }
+  .item13{
+    margin-top: 500px;
+  }
+}
+
+
+@media only screen and (max-width:480px) {
+/* for mobile largecreens*/
+  
+
+.navbar{
+position:absolute;
+top: 0%;
+width: 100vw;
+  height: 70vh;
+}
+
+  .body{
+  top: 20px;
+  }
+.item1{
+  display: flex;
+      height:  70vh;
+  width: 85vw;
+}
+  .item2{
+    display: flex;
+    flex-direction: column;
+    }
+  .item2 p{
+    font-size: 0.7rem;
+  }
+  .item3{
+    width: 55vw;
+    right: 0%;
+  }
+  .item4{
+    display: none;
+    top: 600px;
+    left: 6%;
+    width: 18vw;
+  }
+  .item5{
+    display: none;
+    top:600px;
+    left: 26%; 
+    width: 18vw;
+  }
+
+  .flex-container{
+    bottom: 150px;
+  }
+
+.container2{
+    top: 600px;
+    height: 50vh;
+}
+  .item7{
+    top: 1700px;
+    display: flex;
+  }
+  .item7 p{
+    font-size: 0.7rem;
+  }
+.item8{
+  display: none;
+}
+
+  .item9{
+    height: 50vh;
+    width: 60vw
+  }
+  
+  .container3{
+    top: 2300px;  
+  }
+  
+  .item11{
+    height:50vh;
+    width: 50vw;
+    right: 3%;
+  }
+
+  .item12{
+    height: 50vh;
+    margin-top: 250px;
+  }
+  .item13{
+    margin-top: 350px;
+  }
+
+
+  .footer{
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+/* for mobile smallerscreens*/
+  
+
+.navbar{
+position:absolute;
+top: 0%;
+width: 100vw;
+  height: 70vh;
+}
+
+  .body{
+  top: 0px;
+  }
+  
+.item1{
+  display: flex;
+      height:  70vh;
+  width: 85vw;
+}
+  
+  .item2{
+    display: flex;
+    flex-direction: column;
+    
+    }
+  
+  .item2 p{
+    font-size: 0.7rem;
+  }
+  .item3{
+    width: 55vw;
+    right: 0%;
+  }
+  .item4{
+    display: none;
+    top: 600px;
+    left: 6%;
+    width: 18vw;
+  }
+  .item5{
+    display: none;
+    top:600px;
+    left: 26%; 
+    width: 18vw;
+  }
+
+  .flex-container{
+    bottom: 150px;
+  }
+
+.container2{
+    top: 900px;
+    height: 50vh;
+}
+  .item6{
+    top: 1100px;
+  }
+  .item7{
+    top: 1700px;
+    display: flex;
+    background-color: white;
+  }
+  .item7 p{
+    font-size: 0.6rem;
+  }
+.item8{
+  display: none;
+}
+
+  .item9{
+    height: 50vh;
+    width: 60vw
+  }
+  
+  .container3{
+    top: 2300px;  
+  }
+  
+  .item11{
+    height:50vh;
+    width: 50vw;
+    right: 3%;
+  }
+
+  .item12{
+    height: 50vh;
+    margin-top: 250px;
+  }
+  .item13{
+    margin-top: 350px;
+  }
+
+
+  .footer{
+    top: 800px;
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+  }
+}
