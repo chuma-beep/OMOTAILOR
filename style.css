@@ -54,7 +54,13 @@ background-image:url("images/hero.jpg") ;
   top: 10px;
 }
 
-/* css transitions that makes the text change when you hover on them. */
+
+/*.topnav a:hover {
+  border-bottom: 2px solid blue;
+  transition: width 0.30s ease 0.12s;
+  color: blue;
+}*/
+
 
 .topnav a {
   overflow: hidden;
@@ -167,6 +173,43 @@ top: 0%;
   z-index: 100;
  }
 
+/*.body{
+  top:50px;
+  background-color: white;
+  position: absolute;
+  margin: 0;
+}*/
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+button {
+  color: white;
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+/*svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}*/
+
+
 
 .intro-text{
   position: absolute;
@@ -199,7 +242,7 @@ top: 0%;
   color: white;
   text-decoration: none;;
 }
-/* body*/
+
 .flex-container {
   top: 600px;
   position: absolute;
@@ -233,6 +276,7 @@ top: 0%;
 }
 
 .item2{
+  text-align: center;
   font-size: 1.2rem;
 position:relative;
   float:right;
@@ -303,7 +347,8 @@ top: 500px;;
   position: absolute;
   align-self: center;
   float:center;
-   justify-self: center;
+  /*background-color: blue;*/
+  justify-self: center;
   width: 100vw;
     height: 100vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -449,8 +494,6 @@ top: 500px;;
    animation: move-upwards 5s linear infinite;
 }
 
-
-/* inconjuntion with animation the keyframe give the background image motion.*/
 @keyframes move-upwards {
   0% {
     background-position: center bottom;
@@ -472,6 +515,7 @@ top: 500px;;
   gap: 55px;
   justify-content: space-evenly;
 }
+
 
 .fb{
   position: absolute;
@@ -501,10 +545,11 @@ display: none;
   display: inline;
 }
 
+
+
 .ig{
   position: relative;
 }
-
 .ig img{
   width: 45px;
   height: 45px;
