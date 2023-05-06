@@ -1,18 +1,23 @@
-   
-/**{
-    
-}*/
+   *{
+   margin: 0px;
+     padding: 0px;
+}
+
 html, body{
-  height: 100%;
-  width: 100%;
+  margin:0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
   display: flex;
+   font-family: 'Satisfy', cursive;
+  overflow-x: hidden;
 }
 
 .nav-bar {
   top: 0px;
   position: absolute;
   margin:0px;
-  width: 100%;
+  width: 100vw;
   padding-top: 0px;
   background-color: black;
 }
@@ -24,7 +29,7 @@ html, body{
 }
 
 .topnav{
-  width: 100%;
+  width: 100vw;
     background-color: black;
 }
 
@@ -35,6 +40,7 @@ html, body{
   list-style: none;
   margin: 5px;
   top: 10px;
+  
 }
 
 
@@ -164,13 +170,99 @@ a:hover span {
  }
 
 
-.main-page {
-  display: flex;
-  top: 200px;
-  padding: 150px 0px;
-  width: 100%;
   
+.body{
+  display: flex;
+ margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 200px;
 }
+
+
+.flex-container {
+  position: absolute;
+    display:flex;
+  flex-wrap: wrap;
+  top: 200px;
+  justify-content: center;
+  width: 100vw;
+  bottom: 300px;
+  height: 100vh;
+}
+/*
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}*/
+.item1{
+  position: absolute;
+   width: 90vw;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+  flex-direction: row;
+flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+		.product-name{
+      margin-bottom: 3vw;
+    }
+		.cart-item img {
+			width: 100px;
+			height: 100px;
+			display: flex;
+		}
+		.cart-item-details {
+        margin-bottom: 20px;
+			display: flex;
+			flex: 1;
+      margin-left: 10vw;
+		}
+		.cart-item-price {
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		.cart-item-quantity {
+			margin-right: 10px;
+		}
+		.cart-item-total {
+			font-weight: bold;
+		}
+		form {
+			display: flex;
+			align-items: center;
+		}
+		form label {
+  
+			margin-right: 10px;
+		}
+		form input {
+      width: 10vw;
+      height: 5vh;
+			margin-right: 10px;
+		}
+.removeitem-btn{
+  margin-top: 10%;
+  left: 4vw;
+}
+
+
+.checkout-btn{
+  right: 7vw;
+  float: right;
+  position: absolute;
+  margin-top: 4vh;
+ }
+
 
 .footer{
   display: flex;
@@ -181,7 +273,7 @@ a:hover span {
   background-color: grey;
   left: 0;
   right:0;
-  top:1200px;
+  top:1300px;
   overflow-y:hidden;
   position: absolute;
   background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
@@ -197,5 +289,195 @@ a:hover span {
   }
   100% {
     background-position: center top;
+  }
+}
+
+@media only screen and (max-width:765px) {
+
+.logo-img {
+  position: absolute;
+  display: none;
+  top: 0px;
+    width: 25px;
+  height:25px;
+}
+
+.cart{
+     top: 10px;
+      width: 25px;
+  height:25px;
+  margin-right: 0px;
+}
+
+  .account{
+     width: 25px;
+  height:25px;  
+  top: 0%;
+}
+
+
+.nav-icons{
+ right: 12%;
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+width: 25px;
+  }  
+
+.dropdown{
+    right:8%;
+   width: 15px;
+  height:15px; 
+}
+
+.dropdown-options{
+  font-size: 10px;
+  }
+  
+.search-bar{
+  position: absolute;
+  margin-top: 0px;
+  padding-top: 0px;
+  top:100px;
+  display: flex;
+  bottom: 150px;
+  width: 70vw;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+}
+
+.footer{
+  height: 120px;
+}
+  
+ .item1{
+  position: absolute;
+   width: 100vw;
+    height:60vh;
+   display: flex;
+    flex-direction: column;
+    }
+  
+  	.cart-item img {
+			max-width: 50vw;
+			height: 50vh;
+			object-fit: cover;
+		}
+  
+		.cart-item-details{
+      margin-top: 20px;
+          display: flex;
+      flex-direction: column;
+      font-size: 4vw;
+      
+}
+
+  form input{
+     width: 5vw;
+      height:4vh;
+     font-size: 4vw;
+  }
+
+  .total{
+    width: 15vw
+  }
+
+  .price{
+    width: 15vw
+  }
+} 
+
+@media only screen and (max-width: 425px){
+   .item1{
+  position: absolute;
+   width: 90vw;
+    height:70vh;
+   display: flex;
+   flex-direction: row;
+     justify-content: center;
+    }
+  
+  	.cart-item img {
+     display: flex;
+      justify-self: center;
+			max-width: 50vw;
+			height: 50vh;
+			object-fit: cover;
+		}
+  
+		.cart-item-details{
+      margin-top: 20px;
+          display: flex;
+      flex-direction: column;
+      font-size: 4vw;
+}
+
+  form input{
+     width: 8vw;
+      height: 5vh;
+     font-size: 4vw;
+  }
+  
+.checkout-btn{
+  top: 66vh;
+  right: 16vw;
+  float: right;
+  position: absolute;
+  margin-top: 4vh;
+ }
+  
+  .total{
+    width: 15vw
+  }
+
+  .price{
+    width: 15vw
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .item1{
+  position: absolute;
+   width: 100vw;
+    height:70vh;
+   display: flex;
+    flex-direction: row;
+     justify-content: center;
+    }
+  
+  	.cart-item img {
+			max-width: 50vw;
+			height: 50vh;
+			object-fit: cover;
+		}
+  
+		.cart-item-details{
+      margin-top: 20px;
+          display: flex;
+      flex-direction: column;
+      font-size: 4vw;
+      
+}
+
+  form input{
+     width: 8vw;
+      height: 5vh;
+     font-size: 4vw;
+  }
+
+  .total{
+    width: 15vw
+  }
+
+  .price{
+    width: 15vw
+  }
+  .footer{
+    width: 100vw;
+    height: 100px;
+    left: 0;
+    margin-left: 0;
   }
 }

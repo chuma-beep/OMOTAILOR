@@ -311,3 +311,82 @@ display: none;
   
 
 }
+
+
+
+@media only screen and (max-width:480px) {
+
+
+.logo-img {
+  position: absolute;
+  display: none;
+  top: 0px;
+    width: 25px;
+  height:25px;
+}
+
+.cart{
+     top: 10px;
+      width: 25px;
+  height:25px;
+  margin-right: 0px;
+}
+
+
+  
+.cart a{
+  margin-left:;
+}
+  
+  
+  
+  .account{
+     width: 15px;
+  height:15px;  
+  top: 0%;
+}
+
+
+.nav-icons{
+ right: 12%;
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+width: 25px;
+  }
+  
+.nav-icons:hover
+{
+}  
+
+.dropdown{
+    right:8%;
+   width: 15px;
+  height:15px; 
+}
+
+.dropdown-options{
+  font-size: 10px;
+  }
+
+
+
+.search-bar{
+  position: absolute;
+  margin-top: 0px;
+  padding-top: 0px;
+  top:100px;
+  display: flex;
+  bottom: 150px;
+  width: 70vw;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+}
+
+.footer{
+  height: 120px;
+}
+
+} 
