@@ -1,8 +1,8 @@
-   
 *{
   margin:0;
   padding:0;
 }
+
 html, body{
    margin:0;
   padding:0;
@@ -116,7 +116,6 @@ a:hover span {
       width: 30px;
   height:30px;
   margin-right: 15px;
-  
 }
 
 
@@ -153,7 +152,6 @@ a:hover span {
 
 
 .nav-icons{
-  margin-left: 15px;
   float: right;
   display: inline-block;
   background-color: black;
@@ -170,19 +168,18 @@ a:hover span {
 }
 
 .dropdown-options{
-  top: 10px;
+  top: 15px;
   display: none;
   overflow: auto;
   font-size: 15px;
-  background-color: black;
+ background-color: transparent;
 }
 
 .dropdown:hover .dropdown-options{
   display: block;
    position:absolute;
   z-index: 100;
-  
-  background-color: black;
+ background-color: black;
 }
 
 
@@ -234,189 +231,128 @@ button {
   height: 44px;
 }
 
-
 .flex-container {
   position: absolute;
     display:flex;
   flex-wrap: wrap;
-  top: 300px;
-  justify-content: center;
+  flex-direction: row;
+  top: 100px;
+  align-items: center;
+  justify-content: flex-start;
   width: 100vw;
-  bottom: 400px;
+   height: 100vh;
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
+/* background-color: #f1f1f1;*/
   margin: 10px;
   padding: 20px;
   font-size: 30px;
-
-}
-/*for the modal*/
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+  width: 30vw;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.prod-cont{ 
+width:40vw;
+align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+.item-content-btn .btn{
+  color: white;
 }
+  
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+/*
+.input-txt{
+display:flex;
+  flex-direction: row;
+   font-size: 3vw;
 }
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
-.nav-icons{
-  right: 12%;
-}
-
-.cart{
-  margin-right: 6vw;
-}
-
-
-
-  .btn{
-    color: white;
+*/
+.input{
+  display: flex;
+  flex-direction: row;
+  width: 18vw;
   }
 
-.item1{
+.item1 {
+   margin-left: 2vw;
+    /*justify-content: ;*/
   display:flex;
-  flex-direction: column;
-   width: 30vw;
-    height: 80vh;
+flex-direction: column;
+  
+   width: 25vw;
+    height: 70vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2vh;
 }
 
 .item1 img{
-height: 70vh;
-}
+height: 50vh;
+  width: 25vw;
+  float: center;
+}   
 
-.item-content .btn{
-  width: 10vw;
+
+
+ #btn{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  margin-top: 0vw;
+  width: 8vw;
   height: 5vh;
   font-size: 1.5vw;
-  background-color: blue;
-}
-.item-content{
-margin-top: 10px;
-display:flex;
-flex-direction: row;
-  justify-content: space-between;
-}
-.item2{
-  display:flex;
-  flex-direction: column;
-   width: 30vw;
-    height: 80vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.item2 img{
-height: 70vh;
-}
-.item3{
-  display:flex;
-  flex-direction: column;
-  width: 30vw;
-    height: 80vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.item3 img{
-height: 70vh;
-}
-.item4{
-  display:flex;
-  flex-direction: column;
-  width: 30vw;
-    height:80vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.item4 img{
-height: 70vh;
+  background-color:blue;
+  color: white;
+   text-align: center;
+  justify-content: center;
 }
 
-  
+.item-content{
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-txt{
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.price{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: black;
+  font-size: 2vw;
+  }
+
+
+
+h5{
+  display: inline-block;
+}
+
 .body{
   display: flex;
- margin-top: 200px;
+ margin-top: 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  top: 200px;
+  top: 0px;
 }
 .footer{
   display: flex;
@@ -426,7 +362,7 @@ height: 70vh;
   height: 150px;
   left: 0;
   right:0;
-  top:2000px;
+  top:200%;
   overflow-y:hidden;
   position: absolute;
   background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
@@ -447,7 +383,6 @@ height: 70vh;
   }
 }
 
-
 .contact{
   top: 0;
   position: absolute;
@@ -466,6 +401,7 @@ height: 70vh;
 .fb{
   position: absolute;
 }
+
 .hover-fb {
 position: absolute;
 top: 0;
@@ -480,6 +416,7 @@ display: none;
 .whats{
   position: relative;
 }
+
 .hover-whats{
 position: absolute;
 top: 0;
@@ -509,11 +446,39 @@ display: none;
 .ig:hover .hover-ig{
   display: inline;
 }
+
+@media only screen and(max-device-width: 768px){
   
-@media only screen 
-  and (max-device-width: 425px) 
+.item1 {
+    justify-content: space-evenly;
+  display:flex;
+flex-direction: row;
+   width:20vw;
+    height: 40vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2vh;
+}
+
+.item1 img{
+height: 30vh;
+  width: 25vw;
+}
+
+.item{
+  display: flex;
+  position: fixed;
+  right: 0;
+  top:20vh;
+  width: 15vw;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+}
+
+
+@media only screen and (max-device-width: 425px) 
 {
-  /* for mobile*/
   
 .logo-img {
   position: absolute;
@@ -530,20 +495,11 @@ display: none;
   margin-right: 0px;
 }
 
-
-  
-.cart a{
-  margin-left:;
-}
-  
-  
-  
-  .account{
+ .account{
      width: 15px;
   height:15px;  
   top: 0%;
 }
-
 
 .nav-icons{
  right: 12%;
@@ -553,10 +509,6 @@ display: none;
 width: 25px;
   }
   
-.nav-icons:hover
-{
-}  
-
 .dropdown{
     right:8%;
    width: 15px;
@@ -567,55 +519,103 @@ width: 25px;
   font-size: 10px;
   }
 
-
-
-.search-bar{
-  position: absolute;
-  margin-top: 0px;
-  padding-top: 0px;
-  top:100px;
-  display: flex;
-  bottom: 150px;
-  width: 70vw;
+.body{
+   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100px;
-  margin-bottom: 10px;
-  padding-bottom: 25px;
+ }
+
+  
+.flex-container{
+  top:40vw;
+  justify-content: center;
+  height: 100vh;
 }
 
+.prod-cont{ 
+width:50vw;
+  margin:0px;
+ display: flex;
+  flex-direction: column;
+ justify-content: center;
+  align-items: center;
+}
 
- .item-content .btn{
-   font-size: 3vw;
- }
-  
-.item1{
-  
-   width: 80vw;
+.item1{  
+  display: flex;
+  flex-direction: column;
+  margin-left:  0px;
+   width:80vw;
     height: 70vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     float: right;
+  right: 0;
 }
 
-.item2{
-   width: 80vw;
-    height:70vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .item1 img{
+    height: 50vh;
+    width: 80vw;
+  }
+  
+.price{
+  font-size:5vw;
+  width:20vw;
+  float: center;
+  align-self: center;
+  margin-bottom: 2vw;
 }
 
-.item3{
-  width: 80vw;
-    height:70vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .item-content{
+    width: 50vw;
+  }
+
+ #btn{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  margin-top: 0vw;
+  width: 25vw;
+  height: 4vh;
+  font-size: 2vw;
+  background-color:blue;
+  color: white;
+   text-align: center;
 }
 
-.item4{
-  width: 80vw;
-    height:70vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  #item-btn{
+    align-items: center;
+  }
 
+.input{
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 16px;
+  float: left;
+  }
+
+
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+  
   .footer{
-    top:2500px;
+    bottom:0;
     height: 100px;
+    margin-top: 200px;
   }
 
   .contact-links{
@@ -623,10 +623,16 @@ width: 25px;
   }
 }
 
+/*@media only screen and (min-device-width: 375px){
+.item .input-txt{
+  margin-left:5vw;
+} 
+}
+}*/
+
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2){
+  {
   
 .logo-img {
   position: absolute;
@@ -636,9 +642,20 @@ width: 25px;
   height:25px;
 }
 
-  .item-content .btn{
-   font-size: 3vw;
+   .totalprice{
+   font-size:7vw;
  }
+
+    .item{
+      width: 94vw;
+    }
+    
+  .item .btn{
+  display:flex;
+  justify-content:center;
+  width: 70vw;
+   font-size:5vw;
+}
   
 .cart{
      top: 10px;
@@ -648,15 +665,19 @@ width: 25px;
 }
 
 
-
+.item .input-txt{
+  margin-left:1vw;
+}
   .footer{
-    top:2500px;
-    height: 100px;
+      top:1500px;
   }
 
 .contact h4{
   font-size: 5vw;
 }
-
-
+.account{
+  width: 25px;
+  height: 25px;
+}
+  
 }

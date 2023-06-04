@@ -128,6 +128,7 @@ a:hover span {
   height: 30px;
   left: 50%;
 }
+
 .cart{
   display: flex;
   align-items: right;
@@ -309,6 +310,11 @@ position:relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+.item2-text{
+  align-self: center;
+}
+
+
 .item2 p{
   font-size: 1.2rem;
   
@@ -398,7 +404,7 @@ top: 500px;;
   background-color: white;
 }
 .item7-text{
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-align: center;
   margin-top: 20vh;
 }

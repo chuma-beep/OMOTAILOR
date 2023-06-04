@@ -10,6 +10,7 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="store.js"></script>
   <title>OMOTAILOR</title>
  <link href="store.css" rel="stylesheet" type="text/css" />
 </head>
@@ -58,71 +59,58 @@
   
 
 
-
 <div class="flex-container">
-  <div class="item1"><img id="myImg" src="images/pachoeko-post-2023_03_14_21_57.jpg" alt="Agbada" />
-    <div class="item-content">
-    <p>Agbada</p>
-    <input type="button" class="btn" value="add to cart"></input>
+
+  <div class="prod-cont">
+  <div class="products">
+    <!--render products here-->
+  </div>
+       <div class="item1">
+    <div><img id="myImg" src="images/pachoeko-post-2023_03_14_21_57.jpg" alt="Agbada" />
     </div>
-    <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-  </div>
-
-
-
-  
-   <div class="item2"><img id="myImg" src="images/omotailor-post-2023_03_19_00_51.jpg" alt="Suit" />
+    <div class="form-item" id="item-content">
+        <div class="item-txt">
+               <h2>AGBADA</h2>
+          </div>
+      <form>
+         <div class="input">    
+					<input class="price" type="text" id="price" name="price" value="&#8358;100000" readonly>
+          </div>
+        </form>
+   
     <div class="item-content">
-    <p>Suit</p>
-    <input type="button" class="btn" value="add to cart"></input>
+    <input type="button" class="btn" id="btn" value="Add to cart"></input>
+             </div>
+       </div>
+  
+</div>
+ <div class="item1">
+    <div><img id="myImg" src="images/pachoeko-post-2023_03_14_21_57.jpg" alt="Agbada" />
     </div>
-      <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
+    <div class="form-item" id="item-content">
+        <div class="item-txt">
+               <h2>AGBADA</h2>
+          </div>
+      <form>
+         <div class="input">    
+					<input class="price" type="text" id="price" name="price" value="&#8358;100000" readonly>
+          </div>
+      
+   </form>
+    <div class="item-content" id="item-btn">
+    <input type="button" class="btn" id="btn" value="Add to cart"></input>
+             </div>
+       </div>
+    
 </div>
-  </div>
-  
-   <div class="item3"><img id="myImg" src="images/omotailor-post-lady.jpg" alt="Agbada" />
-    <div class="item-content">
-    <p>Unisex Suit</p>
-    <input type="button" class="btn" value="add to cart"></input>
-    </div>
-      <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-  </div>
-
-    <div class="item4"><img id="myImg" src="images/omotailor-post-2023_03_18_00_03-1.jpg" alt="Agbada" />
-    <div class="item-content">
-    <p>Kaftan</p>
-    <input type="button" class="btn" value="add to cart"></input>
-    </div>
-      <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
 </div>
   </div>
 
-  
-  </div>
 
-
-  
-</div>
-  
- 
   
   <div class="footer">
         <div class="contact">
-        <h3>Contact us @</h3>
+        <h3>Contact us@</h3>
         </div>
           <div id="contacts" class="contact-links">
 
