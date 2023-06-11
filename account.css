@@ -172,33 +172,13 @@ a:hover span {
   font-size: 30px;
 
 }
+
 .item1{
   position: absolute;
    width: 90vw;
     height: 100vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-
-/*
-.item2{
-   width: 30vw;
-    height: 70vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.item3{
-  width: 30vw;
-    height: 70vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.item4{
-  width: 30vw;
-    height:70vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-*/
   
 .body{
   display: flex;
@@ -338,7 +318,10 @@ display: none;
   margin-left:;
 }
   
+.form{
+  align-content: center;
   
+}  
   
   .account{
      width: 15px;

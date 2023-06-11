@@ -1,16 +1,7 @@
-   
-*{
-  margin:0;
-  padding:0;
-}
-html, body{
-   margin:0;
-  padding:0;
-  height: 100%;
- width: 100%;
-  overflow-x: hidden;
-}
 
+*{
+  box-sizing: border-box;
+}  
 .nav-bar {
   top: 0px;
   position: absolute;
@@ -142,7 +133,6 @@ a:hover span {
   display: none;
   overflow: auto;
   font-size: 15px;
-  
   background-color: black;
 }
 
@@ -150,37 +140,18 @@ a:hover span {
   display: block;
    position:absolute;
   z-index: 100;
-  
   background-color: black;
 }
 
+
 .flex-container {
   position: absolute;
-    display:flex;
-  flex-wrap: wrap;
   top: 200px;
-  justify-content: center;
-  width: 100vw;
-  bottom: 300px;
-  height: 100vh;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 15px;
-
-}
-
-body {
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
-}
-
-* {
-  box-sizing: border-box;
+  width: 100%;
+  bottom: 0px;
+ overflow-x: hidden;
+  height: 100%;
+  
 }
 
 .row {
@@ -188,7 +159,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin: 0 -16px;
+  margin: 0px;
 }
 
 .col-25 {
@@ -272,6 +243,7 @@ span.price {
   .row {
     flex-direction: column-reverse;
   }
+  
   .col-25 {
     margin-bottom: 20px;
   }
@@ -282,7 +254,7 @@ span.price {
   display: flex;
   justify-content: center;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   height: 150px;
   background-color: grey;
   left: 0;
@@ -439,22 +411,8 @@ width: 25px;
   }
 
 
-
-.search-bar{
-  position: absolute;
-  margin-top: 0px;
-  padding-top: 0px;
-  top:100px;
-  display: flex;
-  bottom: 150px;
-  width: 70vw;
-  justify-content: center;
-  height: 100px;
-  margin-bottom: 10px;
-  padding-bottom: 25px;
-}
-
 .footer{
+bottom: 0;
   height: 120px;
 }
 

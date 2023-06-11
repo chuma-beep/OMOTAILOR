@@ -1,4 +1,4 @@
-   
+    
 *{
   margin:0;
   padding:0;
@@ -343,7 +343,7 @@ flex-direction: 0row;
 .item-content-btn{
 display:flex;
 flex-direction: row;
-  width: 20vw;
+width: 20vw;
  
 }
 
@@ -632,11 +632,15 @@ width: 25px;
   width: 100vw;
   justify-content: center;
   text-align: center;
+  align-items: center;
   }
 
   
   #checkout-btn .btn{
-  width: 70vw;
+    float: center;
+    display: flex;
+    justify-self: center;
+    width: 70vw;
 }
   
 #item h2{
@@ -724,6 +728,26 @@ width:80vw;
      width: 18vw;
      height:5vh;
    }
+
+  
+.form  #total{
+     font-size: 25px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  }
+
+  
+  #checkout-btn .btn{
+    float: left;
+    display: flex;
+    justify-self: center;
+    width: 10vw;
+}
+  
+
 
   
   .footer{
