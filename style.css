@@ -1,9 +1,9 @@
-
 *{
 
   margin:0;
   padding:0;
 }
+
 html, body{
    margin:0;
   padding:0;
@@ -55,20 +55,11 @@ background-image:url("images/hero.jpg") ;
   top: 10px;
 }
 
-
-/*.topnav a:hover {
-  border-bottom: 2px solid blue;
-  transition: width 0.30s ease 0.12s;
-  color: blue;
-}*/
-
-
 .topnav a {
   overflow: hidden;
   position: relative;
   display: inline-block;
 }
-
 
 .topnav 
 a::before,
@@ -176,12 +167,7 @@ top: 0%;
   z-index: 100;
  }
 
-/*.body{
-  top:50px;
-  background-color: white;
-  position: absolute;
-  margin: 0;
-}*/
+
 input {
   all: unset;
   font: 16px system-ui;
@@ -203,15 +189,6 @@ button {
   width: 44px;
   height: 44px;
 }
-
-/*svg {
-  color: #fff;
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  padding: 10px;
-}*/
-
 
 
 .intro-text{
@@ -258,13 +235,6 @@ button {
   
 }
 
-/*.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-
-}*/
 .item1{
   position: relative;
   left: 10%;
@@ -295,10 +265,12 @@ h3{
 h4{
   font-size: 2vw;
   color: blue;
-  
 }
 
 .item2{
+   display: flex;
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
   font-size: 1.2rem;
 position:relative;
@@ -503,9 +475,13 @@ top: 500px;;
   float: right;
   right:10%;
   width: 40vw;
-    height:45vh;
+    height:60vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 650px;
+   background-image: url("images/karaDestiny.jpg");
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -980,14 +956,19 @@ width: 25px;
     top: 1700px;
     background-color: white;
     display: flex;
+    height: 50vh;
   }
   
   .item7 p{
     font-size: 0.7rem;
+    
   }
+  .item7-text{
+    height: 40vh;
+  }
+  
 .item8{
   display: none;
-  background-color: white;
 }
 
   .item9{
@@ -1012,6 +993,7 @@ width: 25px;
   .item13{
     margin-top: 350px;
     background-color: white;
+    height: 50vh;
   }
 
 
@@ -1123,6 +1105,7 @@ width: 100vw;
   .item13{
     margin-top: 350px;
     background-color: white;
+   
   }
 
 

@@ -1,18 +1,9 @@
 //SELECT ELEMENTS
 const productsEl = document.querySelector(".products");
-const products = [
-  {id:0,
-  name: "Agbada",
-  price: 500000,
-  instock: 100,
-  description: "lorem ipsum",
-  imgSrc: "./images/omotailor-post-2023_03_19_00_51.jpg",
-  },
 
-]
 //RENDER PRODUCTS
 function renderProducts() {
-  products.forEach( (product) =>{
+  products.forEach( (product) => {
     productsEl.innerHTML +=
       `
    <div class="item1"><img id="myImg" src="images/pachoeko-post-2023_03_14_21_57.jpg" alt="Agbada" />
@@ -33,11 +24,11 @@ renderProducts();
 
 
 
-/* for the counter*/
+/* for the counter
 
 //initialising a variable name data
 
-var data = 0;
+//var data = 0;
 
 //printing default value of data that is 0 in h2 tag
 document.getElementById("counting").innerText = data;
@@ -52,3 +43,4 @@ function decrement() {
 	data = data - 1;
 	document.getElementById("counting").innerText = data;
 }
+*/

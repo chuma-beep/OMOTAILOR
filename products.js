@@ -1,10 +1,19 @@
 const products = [
-  {id:0,
+  {
+    id:0,
   name: "Agbada",
   price: 500000,
   instock: 100,
   description: "lorem ipsum",
   imgSrc: "./images/omotailor-post-2023_03_19_00_51.jpg",
+  },
+   {
+     id:0,
+  name: "Agbada",
+  price: 500000,
+  instock: 100,
+  description: "lorem ipsum",
+  imgSrc: "images/omotailor-post-2023_03_18_00_03-1.jpg",
   },
    {
      id:0,
@@ -24,13 +33,6 @@ const products = [
   },
    {
      id:0,
-  name: "Agbada",
-  price: 500000,
-  instock: 100,
-  description: "lorem ipsum",
-  imgSrc: "./images/omotailor-post-2023_03_19_00_51.jpg",
-  },
-   {id:0,
   name: "Agbada",
   price: 500000,
   instock: 100,

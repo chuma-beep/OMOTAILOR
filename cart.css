@@ -1,8 +1,8 @@
-    
 *{
   margin:0;
   padding:0;
 }
+
 html, body{
    margin:0;
   padding:0;
@@ -42,20 +42,11 @@ html, body{
   top: 10px;
 }
 
-
-/*.topnav a:hover {
-  border-bottom: 2px solid blue;
-  transition: width 0.30s ease 0.12s;
-  color: blue;
-}*/
-
-
 .topnav a {
   overflow: hidden;
   position: relative;
   display: inline-block;
 }  
-
 
 .topnav 
 a::before,
@@ -250,11 +241,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   left: 68%;
 }
 
-/*.item h2{
-  margin-left: 2.5vw;
-}*/
-
-
  .item .btn{
   display:flex;
   justify-content:center;
@@ -389,11 +375,7 @@ display: inline-block;
   font-size: 2.5vw;
      
 }
-  
-/*.item input{  
-  width: 40vw;
-  text-align: center;
-}*/
+
 h5{
   display: inline-block;
 }
@@ -652,7 +634,7 @@ width: 25px;
 
 
 #total .input-txt{
-  font-size: 5vw;
+  font-size: 4.5vw;
   /*width: 20vw;*/
   text-align: center;
 }
