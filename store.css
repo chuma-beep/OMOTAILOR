@@ -43,12 +43,6 @@ html, body{
 }
 
 
-/*.topnav a:hover {
-  border-bottom: 2px solid blue;
-  transition: width 0.30s ease 0.12s;
-  color: blue;
-}*/
-
 
 .topnav a {
   overflow: hidden;
@@ -237,12 +231,11 @@ button {
   display:flex;
 flex-direction: row;
 top: 200px;
-
 justify-content: flex-start;
 width: 100vw;
  height: 100vh;
-
 }
+
 .products{
   display: flex;
   flex-direction: row;
@@ -330,11 +323,15 @@ h5{
 .body{
   display: flex;
  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
   width: 100%;
   top: 0px;
+  min-height: 100vh;
+ flex-direction: column;
+
 }
+
 .footer{
   display: flex;
   justify-content: center;
@@ -502,25 +499,10 @@ width: 25px;
 
 .body{
    display: flex;
+   height: 100vh;
   flex-direction: column;
   justify-content: center;
  }
-
-  
-.flex-container{
-  top:40vw;
-  justify-content: center;
-  height: 100vh;
-}
-
-.prod-cont{ 
-width:50vw;
-  margin:0px;
- display: flex;
-  flex-direction: column;
- justify-content: center;
-  align-items: center;
-}
 
 .item1{  
   display: flex;
@@ -596,7 +578,7 @@ form {
   .footer{
     bottom:0;
     height: 100px;
-    margin-top: 200px;
+    top: 2500px;
   }
 
   .contact-links{
@@ -649,9 +631,11 @@ form {
 .item .input-txt{
   margin-left:1vw;
 }
-  .footer{
-      top:1500px;
-  }
+  footer{
+    bottom: 0;
+    height: 100px;
+    position:absolute;
+  } 
 
 .contact h4{
   font-size: 5vw;

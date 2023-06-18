@@ -10,15 +10,15 @@ function renderProducts() {
   products.forEach( (product) => {
     productsEl.innerHTML +=
       `<div class="item1">
-      <div><img id="myImg" src="images/pachoeko-post-2023_03_14_21_57.jpg" alt="Agbada" />
+      <div><img id="myImg" src="${product.imgSrc}" alt="${product.name}"/>
       </div>
       <div class="form-item" id="item-content">
           <div class="item-txt">
-                 <h2>AGBADA</h2>
+                 <h2>${product.name}</h2>
             </div>
         <form>
            <div class="input">    
-            <input class="price" type="text" id="price" name="price" value="&#8358;100000" readonly>
+            <input class="price" type="text" id="price" name="price" value="&#8358;${product.price}" readonly>
             </div>
         
      </form>
@@ -32,7 +32,6 @@ function renderProducts() {
   });
 }
 renderProducts();
-
 
 
 /* for the counter
