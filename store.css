@@ -142,7 +142,7 @@ a:hover span {
    position:absolute;
   z-index: 100;
   
-  background-color: black;2
+  background-color: black;
 }
 .account{
      width: 30px;
@@ -231,47 +231,30 @@ button {
   height: 44px;
 }
 
-.flex-container {
-  position: absolute;
-    display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  top: 100px;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100vw;
-   height: 100vh;
-}
-
-.flex-container > div {
-/* background-color: #f1f1f1;*/
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  width: 30vw;
-}
 
 .prod-cont{ 
-width:40vw;
-align-items: center;
+  position: absolute;
+  display:flex;
+flex-direction: row;
+top: 200px;
+
+justify-content: flex-start;
+width: 100vw;
+ height: 100vh;
+
+}
+.products{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .item-content-btn .btn{
   color: white;
 }
   
-
-/*
-.input-txt{
-display:flex;
-  flex-direction: row;
-   font-size: 3vw;
-}
-*/
 .input{
   display: flex;
   flex-direction: row;
@@ -279,11 +262,9 @@ display:flex;
   }
 
 .item1 {
-   margin-left: 2vw;
-    /*justify-content: ;*/
+ margin-left: 2vw;
   display:flex;
-flex-direction: column;
-  
+  flex-direction: column;
    width: 25vw;
     height: 70vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
