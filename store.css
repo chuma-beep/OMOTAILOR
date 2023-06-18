@@ -8,7 +8,7 @@ html, body{
   padding:0;
   height: 100%;
  width: 100%;
-  overflow-x: hidden;
+ overflow-x: hidden;
 }
 
 .nav-bar {
@@ -277,9 +277,9 @@ height: 50vh;
   flex-direction: row;
   align-content: flex-end;
   margin-top: 0vw;
-  width: 8vw;
-  height: 5vh;
-  font-size: 1.5vw;
+  width: 7vw;
+  height: 4vh;
+  font-size: 1.2vw;
   background-color:blue;
   color: white;
    text-align: center;
@@ -452,6 +452,20 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
+#btn{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  margin-top: 0vw;
+  width: 5vw;
+  height: 4vh;
+  font-size: 1.2vw;
+  background-color:blue;
+  color: white;
+   text-align: center;
+  justify-content: center;
+}
+
 }
 
 
@@ -537,7 +551,7 @@ width: 25px;
   flex-direction: row;
   align-content: flex-end;
   margin-top: 0vw;
-  width: 25vw;
+  width: 20vw;
   height: 4vh;
   font-size: 2vw;
   background-color:blue;

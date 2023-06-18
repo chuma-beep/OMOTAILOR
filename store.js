@@ -22,35 +22,48 @@ function renderProducts() {
             </div>
         
      </form>
-      <div class="item-content" id="item-btn">
+      <div class="item-content" id="item-btn" onclick="addToCart(${product.id})">
       <input type="button" class="btn" id="btn" value="Add to cart"></input>
                </div>
          </div>
-      
   </div>
-    `
+    `;
   });
 }
 renderProducts();
 
+// cart array
+var cart = [];
 
-/* for the counter
+//Add to cart
+function addToCart(id) {
+  //check if product already exists in cart
+  if(cart.some((item) => item.id === id)){
+    alert("Product already in cart")
+  }else{
+    const item = products.find((product) => product.id === id);
 
-//initialising a variable name data
+/* for the counter*/
 
-//var data = 0;
+    cart.push({
+      ...item,
+      numberOfUnits: 1,
+    });
+  }
 
-//printing default value of data that is 0 in h2 tag
-document.getElementById("counting").innerText = data;
+var data = 0;
 
-//creation of increment function
-function increment() {
-	data = data + 1;
-	document.getElementById("counting").innerText = data;
+
+// update cart
+function updateCart(){
+renderartItems();
+//renderSubtotal();
 }
-//creation of decrement function
-function decrement() {
-	data = data - 1;
-	document.getElementById("counting").innerText = data;
+
+
+//render cart items
+functionrenderCartItems(){
+  cart.forEach(() => {
+
+  })
 }
-*/
