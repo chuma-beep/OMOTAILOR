@@ -3,11 +3,10 @@
 const productsEl = document.querySelector(".products");
 =======
 var productsEl = document.querySelector(".products");
->>>>>>> 127d6f1 (corrected some errors in the store)
 
 //RENDER PRODUCTS
 function renderProducts() {
-  products.forEach( (product) => {
+  products.forEach( (product) =>{
     productsEl.innerHTML +=
       `<div class="item1">
       <div><img id="myImg" src="${product.imgSrc}" alt="${product.name}"/>
@@ -31,6 +30,7 @@ function renderProducts() {
   });
 }
 renderProducts();
+
 
 // cart array
 var cart = [];
@@ -56,14 +56,43 @@ var data = 0;
 
 // update cart
 function updateCart(){
-renderartItems();
+renderCartItems();
 //renderSubtotal();
 }
 
 
 //render cart items
-functionrenderCartItems(){
-  cart.forEach(() => {
-
-  })
+function renderCartItems(){
+  cart.forEach((item) => {
+    cartItemsEl.innerHTML +=`
+    <div class="cart-item">
+    <div><img id="myImg" src="${item.imgSrc}" alt="${item.name}" />
+    </div>
+    <div class="form-item" id="item-content">
+        <div class="item-txt">
+               <h2>${item.name}</h2>
+          </div>
+      <form>
+         <div class="input">    
+					<input class="price" type="text" id="price" name="price" value="&#8358;${item.price}" readonly>
+          </div>
+        <div class="quantity">
+   <label for="quantity"></label>
+  <div class="quantity-input">
+    <button class="quantity-minus" type="button"onclick="decrement()">-</button>
+    <h5 id="counting">${item.numberOfUnits}</h5>
+    <button class="quantity-plus" type="button" onclick="increment()">+</button>
+  </div>
+        </div>
+        </form>
+   
+    <div class="item-content">
+    <input type="button" class="btn" value="remove item"></input>
+             </div>
+       </div>
+  
+</div>
+`
+ })
 }
+

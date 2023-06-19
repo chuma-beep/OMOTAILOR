@@ -1,36 +1,53 @@
-//SELECT ELEMENTS
-const productsEl = document.querySelector(".products");
-const products = [
-  {id:0,
-  name: "Agbada",
-  price: 500000,
-  instock: 100,
-  description: "lorem ipsum",
-  imgSrc: "./images/omotailor-post-2023_03_19_00_51.jpg",
-  },
 
-]
-//RENDER PRODUCTS
-function renderProducts() {
-  products.forEach( (product) =>{
-    productsEl.innerHTML +=
-      `
-          <div class="item1">
-    <div><img id="myImg" src="images/pachoeko-post-2023_03_14_21_57.jpg" alt="Agbada" />
+// cart array
+var cart = [];
+
+//Add to cart
+function addToCart(id) {
+  //check if product already exists in cart
+  if(cart.some((item) => item.id === id)){
+    alert("Product already in cart")
+  }else{
+    const item = products.find((product) => product.id === id);
+
+
+    cart.push({
+      ...item,
+      numberOfUnits: 1,
+    });
+  }
+
+ updateCart();
+}
+
+
+// update cart
+function updateCart(){
+renderartItems();
+//renderSubtotal();
+}
+
+
+//render cart items
+functionrenderCartItems();{
+  cart.forEach((item) => {
+    cartItemsEl.innerHTML +=`
+    <div class="cart-item">
+    <div><img id="myImg" src="${item.imgSrc}" alt="${item.name}" />
     </div>
     <div class="form-item" id="item-content">
         <div class="item-txt">
-               <h2>AGBADA</h2>
+               <h2>${item.name}</h2>
           </div>
       <form>
          <div class="input">    
-					<input class="price" type="text" id="price" name="price" value="&#8358;100000" readonly>
+					<input class="price" type="text" id="price" name="price" value="&#8358;${item.price}" readonly>
           </div>
         <div class="quantity">
    <label for="quantity"></label>
   <div class="quantity-input">
     <button class="quantity-minus" type="button"onclick="decrement()">-</button>
-    <h5 id="counting"></h5>
+    <h5 id="counting">${item.numberOfUnits}</h5>
     <button class="quantity-plus" type="button" onclick="increment()">+</button>
   </div>
         </div>
@@ -42,10 +59,11 @@ function renderProducts() {
        </div>
   
 </div>
-    `
-  });
+`
+
+  })
 }
-renderProducts();
+
 
 
 
