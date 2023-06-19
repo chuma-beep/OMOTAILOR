@@ -1,2 +1,2 @@
 # OMOTAILOR
-this a template for an fashion website I am currently building.
+this a template for a fashion website I am currently building.
