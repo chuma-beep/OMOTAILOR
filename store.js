@@ -1,8 +1,6 @@
 //SELECT ELEMENTS
-<<<<<<< HEAD
-const productsEl = document.querySelector(".products");
-=======
 var productsEl = document.querySelector(".products");
+var  cartItemsEl = document.querySelector(".cart-items");
 
 //RENDER PRODUCTS
 function renderProducts() {
