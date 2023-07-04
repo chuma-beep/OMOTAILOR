@@ -5,13 +5,12 @@ const cartItemsEl = document.querySelector(".cart-items");
 
 // RENDER PRODUCTS
 function renderProducts() {
-  products.forEach((product) => {
-    productsEl.innerHTML += `
-      <div class="item1">
-        <div>
-          <img id="myImg" src="${product.imgSrc}" alt="${product.name}" />
-        </div>
-        <div class="form-item" id="item-content">
+  products.forEach( (product) =>{
+    productsEl.innerHTML +=
+      `<div class="item1">
+      <div><img id="myImg" src="${product.imgSrc}" alt="${product.name}"/>
+      </div>
+      <div class="form-item" id="item-content">
           <div class="item-txt">
             <h2>${product.name}</h2>
           </div>
@@ -94,4 +93,4 @@ function renderCartItems() {
     `;
   });
 }
-
+}
