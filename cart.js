@@ -17,14 +17,14 @@ function addToCart(id) {
     });
   }
 
- updateCart();
-}
-
 
 // update cart
 function updateCart(){
 renderartItems();
 //renderSubtotal();
+}
+
+updateCart();
 }
 
 

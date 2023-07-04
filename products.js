@@ -31,7 +31,8 @@ const products = [
   description: "lorem ipsum",
   imgSrc:"./images/omotailor-post-lady.jpg",
   },
-   {id:0,
+   {
+    id:4,
   name: "Agbada",
   price: 500000,
   instock: 100,

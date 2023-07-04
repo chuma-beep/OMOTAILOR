@@ -422,7 +422,7 @@ h5{
   height: 150px;
   left: 0;
   right:0;
-  top:1500px;
+  top:2000px;
   overflow-y:hidden;
   position: absolute;
   background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
@@ -798,6 +798,9 @@ width:100vw;
 .account{
   width: 25px;
   height: 25px;
+}
+form{
+  font-size: 3vw;
 }
   
 }

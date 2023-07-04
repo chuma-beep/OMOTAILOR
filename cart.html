@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <meta name="viewport" content="width=device-width, initial-scale=1">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <title>OMOTAILOR</title>
+<title>OMOTAILOR</title>
  <link href="cart.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,6 +24,7 @@
      <!--<p>Hover <a href="#" data-replace="get a link"><span>get a link</span></a></p>-->
   <a href="index.html" data-replace="Home"><span>Home</span></a>
      <a href="about.html" data-replace="About"><span>About</span></a>
+     <a href="store.html" data-replace="Shop"><span>Shop</span></a>
 </ul>
        <div class="dropdown">
        <a><img id="account" src="images/account.png" alt="account" style="height: 30px; width: 30px;"/>
@@ -33,11 +35,14 @@
        
          </div>
        </div>
-     <div class="nav-icons">
-       
-     <a href="cart.html"><img class="cart" src="images/cart.png" alt="shop" /></a>
-       </div>       
+
    </div>
+   <div class="cart">
+    <a href="cart.html">
+    <span class="count">0</span>
+    <i class="material-icons">shopping_cart</i>
+    </a>
+  </div>  
      </div>
    </div>
      
@@ -48,7 +53,8 @@
 
 
 <div class="flex-container">
- 
+
+
   <div class="item" id="item">
   
        <form class="form">
@@ -59,15 +65,26 @@
     <div class="item-content-btn" id="checkout-btn">
     <a href="checkout.html"><input type="button"   class="btn" value="CHECKOUT"></input></a>
     </div>
-       </div>
-  
+ </div>
 
-  <div class="cart-cont">
-  <div class="cart-items">
-    <!--render cart items  here-->
-    
-  </div>
+
  
+
+<!--<div class="products-container">
+<!--  <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+        </div>-->
+  <div class="products"></div>
+</div>
+ 
+
+    <!--render cart items  here-->
+   <!--<div class="cart-item">
+  
+    </div>-->
 
   </div>
   </div>
@@ -92,8 +109,9 @@
 </div>
 
 </div>
-</div>
-   <script src="products.js"></script>
-   <script src="store.js"></script>
+
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
