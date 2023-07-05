@@ -97,7 +97,7 @@ localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 
 //calculate total cost
 function totalCost(product) {
-  let cartCost = localStorage.getItem("totalCost");
+let cartCost = localStorage.getItem("tottalCost");
   
 
   if(cartCost != null) {
@@ -116,6 +116,8 @@ function totalCost(product) {
     console.log(cartItems);
     let productContainer = document.querySelector
     (".products");
+    let cartCost = localStorage.getItem("tottalCost");
+
     if(cartItems && productContainer ) {
         productContainer.innerHTML = " ";
         Object.values(cartItems).map(item => {
@@ -130,13 +132,13 @@ function totalCost(product) {
                   </div>
               <form>
                  <div class="input">    
-                            <input class="price" type="text" id="price" name="price" value="&#8358;${item.price}" readonly>
+                            <input class="price" type="text" id="price" name="price" value="&#8358;${item.price},000" readonly>
                   </div>
                 <div class="quantity">
            <label for="quantity"></label>
           <div class="quantity-input">
             <button class="quantity-minus" type="button"onclick="decrement()">-</button>
-            <h5 id="counting">${item.inCart}</h5>
+            <h5 id="counting">${item.incart}</h5>
             <button class="quantity-plus" type="button" onclick="increment()">+</button>
           </div>
                 </div>
@@ -148,16 +150,20 @@ function totalCost(product) {
                </div>
           
         </div>
-        `
-
-           
-       /* <div class="product>
-            <ion-icon name="close-circle-outline"></ion-icon>
-            <img src="./images/${item.tag}.jpg">
-            <span>${item.name}</span>
-            </div>
-            `*/
+        `;   
         });
+        productContainer.innerHTML += `
+        <div class="item" id="item">
+        <form class="form">
+          <h2>Total amount</h2>
+          <div class="input-total">
+        <input type="text" id="total" name="total" value="&#8358;${cartCost},000" readonly>
+           </div>
+     <div class="item-content-btn" id="checkout-btn">
+     <a href="checkout.html"><input type="button"   class="btn" value="CHECKOUT"></input></a>
+     </div>
+  </div> 
+  `;
     }
   }
 
