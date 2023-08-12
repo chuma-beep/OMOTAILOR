@@ -232,13 +232,13 @@ button {
   justify-content: flex-start;
   width: 100vw;
    height: 100vh;
+    
 }
 
 .flex-container > div {
-/* background-color: #f1f1f1;*/
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   width: 30vw;
 }
 
@@ -432,25 +432,33 @@ h5{
 
 }
 
+
 .body{
-  display: flex;
+  position: relative;
  margin-top: 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
   top: 0px;
 }
+
+.body::after {
+  content: '';
+  display: block;
+  height: 250vh;
+}
 .footer{
   display: flex;
   justify-content: center;
   bottom: 0;
+  top: 100%;
   width: 100vw;
   height: 150px;
   left: 0;
   right:0;
-  top:2000px;
-  overflow-y:hidden;
-  position: absolute;
+ position: absolute;
+ justify-self: flex-end;
+ overflow-y:hidden;
   background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
   background-repeat: no-repeat;
   background-position: center;
