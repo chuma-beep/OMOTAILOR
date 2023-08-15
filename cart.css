@@ -101,10 +101,14 @@ a:hover span {
   top: 0px;
 }
 
-.cart a{
-  top: 0px;
 
+
+.cart a{
+  top: 6px;
 }
+
+
+
 .cart {
   position: relative;
   display: block;

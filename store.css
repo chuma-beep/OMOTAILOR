@@ -2,16 +2,17 @@
   margin:0;
   padding:0;
   box-sizing: border-box;  
+ 
+
 }
 
 html, body{
    margin:0;
   padding:0;
   height: 100%;
- width: 100%;
-
- overflow-x: hidden;
-
+ width: 100vw;
+ position:relative;
+  overflow-x: hidden;
 }
 
 .nav-bar {
@@ -118,49 +119,59 @@ a:hover span {
   height:30px; 
 }
 
+
+.dropdown a{
+  top: 0%;
+}
+
+
 .dropdown-options{
   display: none;
   overflow: auto;
   font-size: 15px;
-  
   background-color: black;
 }
 
 .dropdown:hover .dropdown-options{
   display: block;
    position:absolute;
-  z-index: 100;
-  
   background-color: black;
 }
+
 .account{
      width: 30px;
   height:30px;  
   top: 0%;
-}
-.cart a{
-  top: 0px;
+  right: 80%;
 
 }
+
+
+.cart a{
+  top: 4px;
+  
+}
+
 
 .cart {
   position: relative;
   top:15px;
   float: right;
- display: inline-block;
+  display: inline-block;
   background-color: black;
   width: 35px;
   height: 35px;
   height: auto;
   overflow: hidden;
   .material-icons {
-    position:initial;
-    top: 15px;
-    z-index:1;
-    font-size: 24px;
-    color: white;
+  position:initial;
+  top: 15px;
+  z-index:1;
+  font-size: 24px;
+  color: white;
   }
-  
+
+
   .count {
     position: absolute;
     top: 0;
@@ -189,15 +200,19 @@ a:hover span {
   position: absolute;
   background-color: black;
    width: 30px;
-  height:30px; 
+  height:0px; 
+  margin: 0px;
+  padding: 0%;
 }
 
 .dropdown-options{
-  top: 15px;
+  top: 50px;
   display: none;
   overflow: auto;
-  font-size: 15px;
+  font-size: 12px;
  background-color: transparent;
+ margin: 0px;
+ padding: 0%;
 }
 
 .dropdown:hover .dropdown-options{
@@ -372,6 +387,7 @@ h5{
   right:0;
   top:200%;
   overflow-y:hidden;
+  overflow-x:hidden;
   position: absolute;
   background-image: url("images/ilya-lix-4l5fsRjJqLM-unsplash_2.jpg");
   background-repeat: no-repeat;
