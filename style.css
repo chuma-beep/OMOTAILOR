@@ -125,7 +125,7 @@ a:hover span {
   align-items: right;
   float: right;
   right: 5%;
-  top: 15px;
+  top: 20px;
   right: 30%;
   position: right;
     width: 30px;
@@ -143,6 +143,7 @@ top: 0%;
 .nav-icons{
   float: right;
   display: inline-block;
+  top: 13px;
     }
 
 .dropdown{

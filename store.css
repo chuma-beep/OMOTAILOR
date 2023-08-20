@@ -149,15 +149,17 @@ a:hover span {
 
 .cart a{
   top: 4px;
+
   
 }
 
 
 .cart {
-  position: relative;
+  position:relative;
   top:15px;
   float: right;
-  display: inline-block;
+
+  /*display: inline-block;*/
   background-color: black;
   width: 35px;
   height: 35px;
@@ -167,7 +169,7 @@ a:hover span {
   position:initial;
   top: 15px;
   z-index:1;
-  font-size: 24px;
+  font-size: 30px;
   color: white;
   }
 
