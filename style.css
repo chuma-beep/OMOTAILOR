@@ -114,6 +114,17 @@ a:hover span {
   top: 0px;
 }
 
+
+.log-img{
+  top: 0px;
+  width: 25px; 
+  height: 25px;
+  margin: 8px;
+  background-color: #fff;
+}
+
+
+
 .shop{
   width: 30px;
   height: 30px;

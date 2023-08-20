@@ -97,6 +97,16 @@ a:hover span {
   top: 0px;
 }
 
+
+.log-img{
+  top: 0px;
+  width: 30px; 
+  height: 30px;
+  margin: 8px;
+  background-color: #fff;
+}
+
+
 .cart{
      top: 15px;
   right: 50%;
@@ -135,13 +145,14 @@ a:hover span {
   font-size: 15px;
   background-color: black;
 }
-
 .dropdown:hover .dropdown-options{
   display: block;
    position:absolute;
   z-index: 100;
-  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: transparent;
 }
+
 
 
 .flex-container {
