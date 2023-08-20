@@ -17,7 +17,8 @@ html, body{
 
 .nav-bar {
   top: 0px;
-  position: absolute;
+  position: fixed;
+ z-index: 1;
   width: 100vw;
   margin: 0px;
   padding-top: 0px;
@@ -38,7 +39,7 @@ html, body{
 }
 
 .topnav a {
-  color: #f2f2f2;
+  color: #2446f0;
   text-align: center;
   text-decoration: none;
   list-style: none;
@@ -55,12 +56,13 @@ html, body{
 }  
 
 
+
 .topnav 
 a::before,
 a::after {
  content: '';
   position: absolute;
-  width: 100vw;
+  width: 100%;
   left: 0;
 }
 
@@ -101,22 +103,10 @@ a span {
 a:hover span {
   transform: translate3d(-200%, 0, 0);
 }
-
 .logo-img {
   position: absolute;
   display: none;
   top: 0px;
-}
-
-
-.cart-main{
-  top: 0%;
-  right: 0%;
-  display: inline-block;
-  position: absolute;
-  background-color: black;
-   width: 30px;
-  height:30px; 
 }
 
 
@@ -149,27 +139,27 @@ a:hover span {
 
 .cart a{
   top: 4px;
-
-  
+  background-color: none;
+  position: absolute;
 }
 
 
 .cart {
-  position:relative;
+  position:absolute;
   top:15px;
   float: right;
-
+  right: 4%;
+  background-color: none;
   /*display: inline-block;*/
-  background-color: black;
-  width: 35px;
-  height: 35px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
   height: auto;
   overflow: hidden;
   .material-icons {
   position:initial;
   top: 15px;
-  z-index:1;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   }
 
@@ -182,9 +172,9 @@ a:hover span {
     font-size: 11px;
     border-radius: 50%;
     background: #d60b28;
-    width: 16px;
-    height: 16px;
-    line-height:16px;
+    width: 10px;
+    height: 10px;
+    line-height:10px;
     display: block;
     text-align: center;
     color: white;
@@ -196,8 +186,8 @@ a:hover span {
 }
 
 .dropdown{
-  top: 0%;
-  right: 4%;
+  top: 12px;
+  right: 6%;
   display: inline-block;
   position: absolute;
   background-color: black;
