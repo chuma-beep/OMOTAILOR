@@ -160,7 +160,7 @@ a:hover span {
   top:15px;
   float: right;
   right: 4%;
-  background-color: none;
+  background-color: transparent;
   /*display: inline-block;*/
   background-color: transparent;
   width: 100px;
@@ -173,7 +173,6 @@ a:hover span {
   font-size: 20px;
   color: #2446f0;;
   }
-
 
   .count {
     position: absolute;
@@ -195,7 +194,6 @@ a:hover span {
     transform: none;
   }
 }
-
 
 .dropdown{
   top: 12px;
