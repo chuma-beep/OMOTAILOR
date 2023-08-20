@@ -135,7 +135,7 @@ a:hover span {
   position:absolute;
   top:15px;
   float: right;
-  right: 7%;
+  right: 0%;
   background-color: transparent;
   /*display: inline-block;*/
   background-color: transparent;
@@ -146,9 +146,10 @@ a:hover span {
   .material-icons {
   position:initial;
   top: 15px;
-  font-size: 20px;
+  font-size: 30px;
   color: #2446f0;;
   }
+
   .count {
     position: absolute;
     top: 0;
@@ -171,8 +172,8 @@ a:hover span {
 }
 
 .account{
-     width: 25px;
-  height:25px; 
+     width: 20px;
+  height:20px; 
   margin-top: 0px;
 }
 
@@ -195,8 +196,8 @@ margin-top: 0px;
   display: inline-block;
   position: absolute;
   background-color: transparent;
-   width: 30px;
-  height:30px; 
+   width: 25px;
+  height:25px; 
 }
 
 .dropdown-options{
