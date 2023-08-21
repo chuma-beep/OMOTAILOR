@@ -146,31 +146,35 @@ a:hover span {
 
 }
 
+.nav-icons{
+  float: right;
+  display: block;
+  background-color: transparent;
+}
 
 
 .cart a{
-  top: 4px;
+  top: 0px;
   background-color: none;
   position: absolute;
+  
 }
 
 
 .cart {
   position:absolute;
-  top:15px;
+  top:0px;
   float: right;
-  right: 4%;
+  right: 3%;
   background-color: transparent;
   /*display: inline-block;*/
   background-color: transparent;
   width: 100px;
   height: 50px;
   height: auto;
-  overflow: hidden;
   .material-icons {
   position:initial;
-  top: 15px;
-  font-size: 20px;
+  font-size: 28px;
   color: #2446f0;;
   }
 
@@ -196,7 +200,7 @@ a:hover span {
 }
 
 .dropdown{
-  top: 12px;
+  top: 15px;
   right: 6%;
   display: inline-block;
   position: absolute;
@@ -526,47 +530,32 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height:25px;
 }
 
+
 .cart{
+  right: 5%;
   display: inline-block;
       width: 25px;
   height:25px;
   margin-right:10px;
 }
 
-.cart span{
-  display: none;
-}
-
- .account{
-     width: 15px;
-  height:15px;  
-  top: 0%;
-}
-
-.nav-icons{
- right: 12%;
-  position: absolute;
-  display: inline-block;
-  background-color: black;
-width: 25px;
-  }
-  
 .dropdown{
-    right:8%;
+    right:15%;
    width: 15px;
   height:15px; 
+  background-color: transparent;
 }
 
 .dropdown-options{
   font-size: 10px;
   }
 
-.body{
-   display: flex;
-   height: 100vh;
-  flex-direction: column;
-  justify-content: center;
- }
+  .body{
+    display: flex;
+    height: 100vh;
+   flex-direction: column;
+   justify-content: center;
+  }
 
 .item1{  
   display: flex;
