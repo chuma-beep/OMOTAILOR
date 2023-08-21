@@ -115,7 +115,7 @@ a:hover span {
 
 .cart{
      top: 15px;
-  right: 50%;
+  right: 5%;
       width: 30px;
   height:30px;
   margin-right: 15px;
@@ -137,8 +137,8 @@ a:hover span {
   }
 
 .dropdown{
-  top: 0%;
-  right: 4%;
+  top: 12px;
+  right: 6%;
   display: inline-block;
   position: absolute;
   background-color: transparent;
@@ -300,10 +300,33 @@ display: none;
 }
 
 
+@media only screen and (max-width:800px) {
+
+
+  .cart{
+    top: 5px;
+     width: 25px;
+ height:25px;
+ margin-right: 0px;
+ background-color: transparent;
+}
+
+ 
+ #account{ 
+    width: 25px;
+ height:25px;  
+ top: 10px;
+ float: right;
+ right: 10%;
+}
+
+}
 
 @media only screen and (max-width:480px) {
 
-
+.nav-icons{
+  align-items: flex-end;
+}
 .logo-img {
   position: absolute;
   display: none;
@@ -312,55 +335,53 @@ display: none;
   height:25px;
 }
 
+
+
 .cart{
-     top: 10px;
+  float: right;
+  right: 20%;
+     top: 4px;
       width: 25px;
   height:25px;
   margin-right: 0px;
-  background-color: transparent;
+  font-size: 18px;
 }
 
 
-  
-.cart a{
-  margin-left:;
-}
   
 .form{
   align-content: center;
   
 }  
   
-  .account{
-     width: 15px;
-  height:15px;  
-  top: 0%;
+  .account{ 
+     width: 25px;
+  height:25px;  
+  top: 0px;
+  float: right;
+  right: 10%;
 }
 
 
 .nav-icons{
- right: 12%;
   position: absolute;
   display: inline-block;
   background-color: transparent;
 width: 25px;
   }
-  
-.nav-icons:hover
-{
-}  
 
 .dropdown{
-    right:8%;
-   width: 15px;
-  height:15px; 
+  position: absolute;
+    top:10%;
+    right:15%;
+   width: 25px;
+  height:25px; 
+  margin-top: 10px;
 }
 
 .dropdown-options{
   font-size: 10px;
   }
-
-
 
 .search-bar{
   position: absolute;
@@ -380,4 +401,4 @@ width: 25px;
   height: 120px;
 }
 
-} 
+}
