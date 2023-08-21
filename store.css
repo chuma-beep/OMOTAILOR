@@ -155,7 +155,7 @@ a:hover span {
 
 .cart a{
   top: 0px;
-  background-color: none;
+  background-color: transparent;
   position: absolute;
   
 }
@@ -166,8 +166,6 @@ a:hover span {
   top:0px;
   float: right;
   right: 3%;
-  background-color: transparent;
-  /*display: inline-block;*/
   background-color: transparent;
   width: 100px;
   height: 50px;

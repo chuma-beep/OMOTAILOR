@@ -137,12 +137,9 @@ a:hover span {
   float: right;
   right: 0%;
   background-color: transparent;
-  /*display: inline-block;*/
-  background-color: transparent;
   width: 100px;
   height: 50px;
   height: auto;
-  overflow: hidden;
   .material-icons {
   position:initial;
   top: 15px;
@@ -177,12 +174,6 @@ a:hover span {
   margin-top: 0px;
 }
 
-.account img{
-  width: 25px;
-height:25px; 
-margin-top: 0px;
-}
-
 
 .nav-icons{
   float: right;
@@ -190,6 +181,10 @@ margin-top: 0px;
   background-color: transparent;
   }
 
+
+.cart a{
+  background-color: transparent;
+}
 
 .dropdown{
   right: 10%;
@@ -368,6 +363,24 @@ display: none;
 }
 
 /* media Queries*/
+
+/* media Queries*/
+@media only screen and (max-width: 1024px){
+  .cart{
+    right: 5%;
+    display: inline-block;
+        width: 25px;
+    height:25px;
+    margin-right:10px;
+  }
+  
+  .dropdown{
+      right:15%;
+     width: 15px;
+    height:15px; 
+    background-color: transparent;
+  }
+}
 @media only screen and (max-width: 800px){
   .item2{
     top: 200px;
@@ -380,7 +393,25 @@ display: none;
 }
 
 @media only screen and (max-width:480px) {
-.item1{
+
+
+  .cart{
+    right: 5%;
+    display: inline-block;
+        width: 25px;
+    height:25px;
+    margin-right:10px;
+  }
+  
+  .dropdown .account{
+     float: right;
+     width: 15px;
+    height:15px; 
+    background-color: transparent;
+  }
+
+
+  .item1{
  top: 0px;
   width: 70vw;
   left: 0%;
@@ -415,24 +446,23 @@ display: none;
 }
 
 .cart{
-     top: 10px;
+  float: right;
+  right: 20%;
+     top: 4px;
       width: 25px;
   height:25px;
   margin-right: 0px;
+  font-size: 18px;
 }
 
 
   
-.cart a{
-  margin-left:;
-}
   
-  
-  
-  .account{
+  .account img{
      width: 15px;
   height:15px;  
   top: 0%;
+
 }
 
 
@@ -440,7 +470,7 @@ display: none;
  right: 12%;
   position: absolute;
   display: inline-block;
-  background-color: black;
+  background-color: transparent;
 width: 25px;
   }
   
