@@ -11,22 +11,6 @@ html, body{
   overflow-x: hidden;
 }
 
-.*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;  
- 
-
-}
-
-html, body{
-   margin:0;
-  padding:0;
-  height: 100%;
- width: 100vw;
- position:relative;
-  overflow-x: hidden;
-}
 
 .nav-bar {
   top: 0px;
@@ -35,13 +19,13 @@ html, body{
   width: 100vw;
   margin: 0px;
   padding-top: 0px;
-  background-color: black;
+  background-color: transparent;
 }
 
 .nav-list{
   top: 0;
   left: 20px;
-  background-color: black;    
+  background-color:transparent;    
 }
 
 .topnav{
@@ -135,6 +119,7 @@ a:hover span {
 
 .dropdown a{
   top: 0%;
+  background-color: transparent
 }
 
 
@@ -142,13 +127,13 @@ a:hover span {
   display: none;
   overflow: auto;
   font-size: 15px;
-  background-color: black;
+  background-color:transparent;
 }
 
 .dropdown:hover .dropdown-options{
   display: block;
    position:absolute;
-  background-color: black;
+  background-color: transparent;
 }
 
 .account {
@@ -160,9 +145,8 @@ a:hover span {
 }
 
 
-
 .cart a{
-  top: 4px;
+  top: 0px;
   background-color: none;
   position: absolute;
 }
@@ -170,20 +154,18 @@ a:hover span {
 
 .cart {
   position:absolute;
-  top:15px;
   float: right;
-  right: 4%;
-  background-color: none;
+  right: 6%;
   /*display: inline-block;*/
   background-color: transparent;
   width: 100px;
   height: 50px;
   height: auto;
-  overflow: hidden;
+ 
   .material-icons {
   position:initial;
   top: 15px;
-  font-size: 20px;
+  font-size: 30px;
   color: #2446f0;;
   }
 
@@ -211,15 +193,12 @@ a:hover span {
 
 
 .dropdown{
-  top: 12px;
-  right: 6%;
+  top: 15px;
+  right: 8%;
   display: inline-block;
   position: absolute;
-  background-color: black;
+  background-color: transparent;
    width: 30px;
-  height:0px; 
-  margin: 0px;
-  padding: 0%;
 }
 
 .dropdown-options{
@@ -241,41 +220,15 @@ a:hover span {
 .account{
      width: 30px;
   height:30px;  
-  top: 5%;
 }
 
 
 .nav-icons{
   float: right;
   display: inline-block;
-  background-color: black;
+  background-color: transparent;
   }
 
-.dropdown{
-  top: 0%;
-  right: 4%;
-  display: inline-block;
-  position: absolute;
-  background-color: black;
-   width: 30px;
-  height:30px; 
-}
-
-.dropdown-options{
-  top: 15px;
-  display: none;
-  overflow: auto;
-  font-size: 15px;
- background-color: transparent;
-}
-
-.dropdown:hover .dropdown-options{
-  display: block;
-   position:absolute;
-  z-index: 100;
-  
- background-color: black;
-}
 
 input {
   all: unset;
@@ -681,7 +634,7 @@ width: 25px;
   }
   
 .dropdown{
-    right:8%;
+    right:13%;
    width: 15px;
   height:15px; 
 }
@@ -864,6 +817,12 @@ width:100vw;
   and (min-device-width: 320px) 
   {
   
+    .dropdown{
+      right:16%;
+     width: 15px;
+    height:15px; 
+  }
+
 .logo-img {
   position: absolute;
   display: none;

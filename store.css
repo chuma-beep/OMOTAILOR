@@ -181,11 +181,11 @@ a:hover span {
     top: 0;
     right: 0;
     z-index: 2;
-    font-size: 11px;
+    font-size: 10px;
     border-radius: 50%;
     background: #d60b28;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     line-height:10px;
     display: block;
     text-align: center;
