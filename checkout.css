@@ -1,7 +1,12 @@
-
 *{
   box-sizing: border-box;
-}  
+}
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
 .nav-bar {
   top: 0px;
   position: absolute;
@@ -104,6 +109,7 @@ a:hover span {
   height: 30px;
   margin: 8px;
   background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*
@@ -160,9 +166,7 @@ a:hover span {
   top: 200px;
   width: 100%;
   bottom: 0px;
- overflow-x: hidden;
   height: 100%;
-  
 }
 
 .row {
@@ -352,7 +356,7 @@ display: none;
 }
 
 /*media queries*/
-@media only screen and (max-width:12000px) { 
+@media only screen and (max-width:1200px) { 
 /* for laptops*/
 
 .item1{
@@ -363,6 +367,15 @@ display: none;
   
 
 }
+
+
+@media only screen and (max-width: 1200px){
+  .footer{
+    top: 1000px;
+  }
+}
+
+
 
 @media only screen and (max-width:992px) {
   .flex-container{
