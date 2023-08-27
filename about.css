@@ -406,12 +406,12 @@ display: none;
     top: 1500px;
 
 }
-
+}
 @media only screen and (max-width:480px) {
 
   .cart{
     top: 15px;
-    right: 0%;
+    right: 5%;
     display: inline-block;
         width: 25px;
     height:25px;
@@ -453,13 +453,13 @@ display: none;
   left: 50%;
   display: flex;
   flex-direction: column;
-   width: 50vw;
-    height: 50vh;
+   width: 45vw;
+    height: 65vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
  
 .item2 p{
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .logo-img {
