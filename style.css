@@ -161,9 +161,9 @@ top: 0%;
   height: auto;
   .material-icons {
   position:inline-block;
-  top: 15px;
+  top: 1px;
   font-size: 30px;
-  color: #2446f0;;
+  color:#2446f0;;
   }
 
 
@@ -891,6 +891,7 @@ width: 25px;
 
 
 @media only screen and (max-width:425px) {
+
 /* for mobile largecreens*/
 
 .navbar{
@@ -921,10 +922,10 @@ width: 100vw;
 }
 
 .cart{
-     top: 10px;
+     top: 0px;
       width: 25px;
   height:25px;
-  margin-right: 0px;
+  margin-right: 5px;
 }
 
 

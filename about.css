@@ -211,6 +211,7 @@ a:hover span {
   z-index: 100;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   background-color: transparent;
+  background-color: #f2f2f2; 
 }
 
 /*Body*/
@@ -396,6 +397,17 @@ display: none;
 
 }
 
+
+@media only screen and (min-width:880px) {
+.footer{
+  position: absolute;
+  bottom: 0;
+  top: 1500px;
+}
+
+
+}
+
 @media only screen and (max-width:480px) {
 
 body{
@@ -420,7 +432,7 @@ body{
 
 
 .dropdown{
-   right:18%;
+   right:14%;
   width: 15px;
  height:15px; 
 }
