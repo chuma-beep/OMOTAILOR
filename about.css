@@ -13,7 +13,6 @@ html, body{
 }
 
 .nav-bar {
-
   background-color: transparent;
   top: 0;
   position: fixed;
@@ -27,6 +26,7 @@ html, body{
   left: 20px;
   background-color: transparent;
 }
+
 
 .nav-bar {
   top: 0px;
@@ -398,28 +398,24 @@ display: none;
 }
 
 
-@media only screen and (min-width:880px) {
-.footer{
-  position: absolute;
-  bottom: 0;
-  top: 1500px;
-}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
+  .footer{
+    position: absolute;
+    bottom: 0;
+    top: 1500px;
 
 }
 
 @media only screen and (max-width:480px) {
 
-body{
-
-  }
   .cart{
     top: 15px;
     right: 0%;
     display: inline-block;
         width: 25px;
     height:25px;
-    margin-right:10px;
+    margin-right:0px;
   }
   
   
@@ -430,9 +426,8 @@ body{
 
 }
 
-
 .dropdown{
-   right:14%;
+   right:18%;
   width: 15px;
  height:15px; 
 }
@@ -440,7 +435,6 @@ body{
 .dropdown-options{
  font-size: 10px;
  }
-
 
   .item1{
  top: 0px;
@@ -476,7 +470,6 @@ body{
   height:25px;
 }
   
-
 .search-bar{
   position: absolute;
   margin-top: 0px;
@@ -495,5 +488,5 @@ body{
   height: 120px;
   width: 100%;
 }
+}
 
-} 

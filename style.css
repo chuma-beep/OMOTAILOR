@@ -150,27 +150,28 @@ top: 0%;
     
 }
 
-   
+
 .cart {
   position:absolute;
+  top:15px;
   float: right;
-  right: 0;
+  right: 0%;
   background-color: transparent;
   width: 100px;
   height: 50px;
   height: auto;
   .material-icons {
-  position:inline-block;
-  top: 1px;
+  position:initial;
+  top: 15px;
   font-size: 30px;
-  color:#2446f0;;
+  color: #2446f0;;
   }
 
-
   .count {
-   position: initial;
+    position: absolute;
     top: 0;
-    z-index: 1;
+    right: 0;
+    z-index: 2;
     font-size: 11px;
     border-radius: 50%;
     background: #d60b28;
@@ -186,7 +187,9 @@ top: 0%;
     transform: none;
   }
 }
-    
+
+
+
 .dropdown{
   top: 3%;
   right: 10%;
@@ -888,6 +891,8 @@ width: 25px;
     height: 30px;
   }
 }
+
+
 
 
 @media only screen and (max-width:425px) {
