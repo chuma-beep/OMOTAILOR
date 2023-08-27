@@ -762,7 +762,7 @@ width: 25px;
   .item2{
     left:;
   }
-  .item3{}
+
   .item4{
     top: 600px;
     left: 6%;
@@ -843,7 +843,7 @@ width: 25px;
   .item2{
     left:;
   }
-  .item3{}
+ 
   .item4{
     top: 600px;
     left: 6%;
@@ -938,9 +938,6 @@ width: 100vw;
 width: 25px;
   }
   
-.nav-icons:hover
-{
-}  
 
 .dropdown{
     right:8%;
