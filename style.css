@@ -24,8 +24,8 @@ background-image:url("images/hero.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
    background-position: center;
-
 }
+
 .nav-bar {
   top: 0px;
   position: absolute;
@@ -192,7 +192,7 @@ top: 0%;
 
 .dropdown{
   top: 3%;
-  right: 10%;
+  right: 5%;
   display: inline-block;
   position: absolute;
      width: 30px;
