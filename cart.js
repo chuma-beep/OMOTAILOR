@@ -20,7 +20,7 @@ function addToCart(id) {
 
 // update cart
 function updateCart(){
-renderartItems();
+renderCartItems();
 //renderSubtotal();
 }
 
@@ -29,7 +29,7 @@ updateCart();
 
 
 //render cart items
-functionrenderCartItems();{
+function renderCartItems(){
   cart.forEach((item) => {
     cartItemsEl.innerHTML +=`
     <div class="cart-item">
