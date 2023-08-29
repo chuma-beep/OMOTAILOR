@@ -151,6 +151,59 @@ a:hover span {
   }
 }
 
+.item-content-btn .btn{
+  color: white;
+}
+  
+
+.item{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top:20vh;
+  width: 20vw;
+  height: 25vh;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  left: 68%;
+}
+
+ .item .btn{
+  display:flex;
+  justify-content:center;
+  width: 18vw;
+   font-size:3vw;
+}
+
+.input-txt{
+display:flex;
+  flex-direction: row;
+   font-size: 3vw;
+}
+
+.totalprice{
+  font-size: 1.5vw;
+  margin-bottom:2vw;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  width: 18vw;
+  }
+
+
+.form-item {
+display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin: 10px;
+}
+
+
 
 .flex-container {
   position: relative;

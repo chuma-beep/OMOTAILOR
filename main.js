@@ -122,6 +122,7 @@ function removeItem(product){
         localStorage.setItem("productsIncart", "[]");
     }
 }
+
 //display cart items
   function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
@@ -137,7 +138,7 @@ function removeItem(product){
         Object.values(cartItems).map(item => {
             productContainer.innerHTML +=             
             `
-            <div class="cart-item">
+             <div class="cart-item">
             <div><img id="myImg" src="./images/${item.tag}.jpg" alt="${item.name}" />
             </div>
             <div class="form-item" id="item-content">

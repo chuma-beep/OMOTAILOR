@@ -575,14 +575,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 .price{
   font-size:5vw;
-  width:20vw;
+  width:24vw;
   float: center;
   align-self: center;
   margin-bottom: 2vw;
 }
 
   .item-content{
-    width: 50vw;
+    width: 130vw;
   }
 
  #btn{
