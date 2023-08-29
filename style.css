@@ -28,7 +28,8 @@ background-image:url("images/hero.jpg") ;
 
 .nav-bar {
   top: 0px;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   margin:0px;
   width: 100vw;
   padding-top: 0px; 
@@ -269,7 +270,7 @@ button {
 }
 
 .flex-container {
-  margin-top: 10px;
+  margin-top: 150px;
   top: 300px;
   position: absolute;
     display:flex;
@@ -296,6 +297,11 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 10rem;
+}
+
+.item1 h3{
+  color:aliceblue;
+  border-bottom: 2px solid aliceblue;
 }
 
 
@@ -354,6 +360,12 @@ top: 500px;;
   align-items: center;
 }
 
+.item3 h3{
+  color: aliceblue;
+  border-bottom: 2px solid aliceblue;
+}
+
+
 
 .item4{
   top: 750px;
@@ -383,10 +395,12 @@ top: 500px;;
 
 
 .container2{
+  border-top: 0px;;
   display: flex;
   position: absolute;
   top: 1000px;
-  margin-top: 400px;
+  margin-top: 200px;
+  padding-top: 0px;
   justify-content: center;
   width: 100vw;
 }
@@ -408,7 +422,14 @@ top: 500px;;
    display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+.item6 h3{
+  color: aliceblue;
+  border-bottom: 2px solid aliceblue;
+  
+}
+
 
 .item7{
   position: absolute;
@@ -420,13 +441,14 @@ top: 500px;;
   top: 1820px;
   background-color: white;
 }
+
 .item7-text{
   font-size: 2.5vw;
   text-align: center;
   margin-top: 20vh;
 }
 .item8{
-  border: 5px red;
+
   position: absolute;
   float: right;
     width: 30vw;
@@ -441,7 +463,7 @@ top: 500px;;
 
 
 .item9{
-  border: 5px red;
+
   position: absolute;
   float: right;
   right:3%;
@@ -460,9 +482,10 @@ top: 500px;;
 .container3{
   display: flex;
   position: absolute;
-  top: 2500px;
+  top: 2300px;
   justify-content: center;
   width: 100vw;
+  margin-top: 150px;
 }
 
 .item10{
@@ -533,7 +556,7 @@ background-position: center;
   
 .body{
   display: flex;
- margin-top: 200px;
+ margin-top: 400px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -593,6 +616,7 @@ background-position: center;
 .fb{
   position: absolute;
 }
+
 .hover-fb {
 position: absolute;
 top: 0;
@@ -661,7 +685,7 @@ width: 25px;
   /* CSS styles for iPad */
 }
 
-
+/*
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   
 .navbar{
@@ -733,7 +757,7 @@ width: 25px;
     position: absolute;
     bottom: 0px;
   }
-}
+}*/
 
 
 
@@ -748,9 +772,17 @@ width: 100vw;
 }
 
   .flex-container{
-    top: 700px;
-    margin-top: 400px;
-  }
+    top: 600px;
+    margin-top: 310px;
+    top: 300px;
+    position: absolute;
+      display:flex;
+    flex-wrap: wrap;
+      justify-content: space-between;
+    width: 100vw;
+    bottom: 10px;
+    margin-bottom: 0px;
+  }  
 
 .nav-icons{
  right: 8%;
@@ -759,6 +791,18 @@ width: 100vw;
   background-color:transparent;
 width: 25px;
 }
+
+ 
+.body{
+  display: flex;
+ margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 100px;
+  position: absolute;
+}
+
 .item1{
   left:5%;
   height:  80vh;
@@ -780,10 +824,12 @@ width: 25px;
   }
 
 .container2{
-    top: 300px; 
+    top: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 .item6{
-  margin-top:300px;
+  margin-top:100px;
 }
   
   .item7{
@@ -791,9 +837,14 @@ width: 25px;
     background-color: white;
   }
 .container2{
-    top: 500px;
+    top: 0px;
 }
   
+.container3{
+ top: 2100px;
+ 
+}
+
   .item11{
     height:70vh;
   }
@@ -840,6 +891,8 @@ width: 100vw;
   background-color:transparent;
 width: 25px;
 } 
+
+
 .item1{
   left:5%;
   height:  80vh;
@@ -861,7 +914,7 @@ width: 25px;
   }
 
 .container2{
-    top: 700px;  
+    top: 400px;  
 }
 .item6{
   margin-top: 100px;
@@ -988,7 +1041,7 @@ width: 25px;
 
 
 .container2{
-    top: 350px;
+    top: 150px;
     height: 50vh;
   margin-top: 50px;
 }
@@ -1022,7 +1075,7 @@ width: 25px;
   }
   
   .container3{
-    top: 2200px;  
+    top: 2000px;  
   }
   
   .item11{
@@ -1106,14 +1159,14 @@ width: 100vw;
   }
 
 .container2{
-    top: 700px;
+    top: 400px;
     height: 50vh;
 }
   .item6{
     top: 900px;
   }
   .item7{
-    top: 1700px;
+    top: 1500px;
     display: flex;
     background-color: white;
     width: 35vw;
@@ -1132,7 +1185,7 @@ width: 100vw;
   }
   
   .container3{
-    top: 2300px;  
+    top: 1900px;  
   }
   
   .item11{
