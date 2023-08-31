@@ -130,7 +130,7 @@ function removeItem(product){
     
     console.log(cartItems);
     let productContainer = document.querySelector
-    (".products");
+    (".§products");
     let cartCost = localStorage.getItem("totalCost");
 
     if(cartItems && productContainer ) {
@@ -206,7 +206,6 @@ function decrement() {
     document.getElementById("counting").innerText = data;
   }
 }
-
 
 
 /*
