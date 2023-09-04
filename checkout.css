@@ -212,7 +212,7 @@ display: flex;
 
 .flex-container {
   position: relative;
-  top: 200px;
+  top: 50px;
   width: 100%;
   bottom: 0px;
   height: 100%;

@@ -155,7 +155,7 @@ a:hover span {
 .cart {
   position:absolute;
   float: right;
-  right: 6%;
+  right: 3%;
   /*display: inline-block;*/
   background-color: transparent;
   width: 100px;
@@ -194,7 +194,8 @@ a:hover span {
 
 .dropdown{
   top: 15px;
-  right: 7%;
+  float: right;
+  left:92%;
   display: inline-block;
   position: absolute;
   background-color: transparent;
@@ -571,7 +572,6 @@ display: none;
 }
 
 @media only screen and(max-device-width: 768px){
-  
 .cart-item {
     justify-content: space-evenly;
   display:flex;
@@ -632,12 +632,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 width: 25px;
   }
   
-.dropdown{
-    right:13%;
+  .dropdown{
+    float: right;
+    left: 80%;
    width: 15px;
   height:15px; 
 }
-
 .dropdown-options{
   font-size: 10px;
   }
@@ -817,7 +817,8 @@ width:100vw;
   {
   
     .dropdown{
-      right:16%;
+      float: right;
+      left: 80%;
      width: 15px;
     height:15px; 
   }
