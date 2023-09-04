@@ -15,7 +15,7 @@ html, body{
 .nav-bar {
   top: 0px;
   position: fixed;
-
+  z-index: 1000;
   width: 100vw;
   margin: 0px;
   padding-top: 0px;
@@ -33,7 +33,14 @@ html, body{
   width: 100%;
   height: 50px;
   background-color: transparent;
+  z-index: 1000;
+}
 
+.topnav-right{
+  top: 0;
+  position: absolute;
+  float: right;
+  right: 8%;
 
 }
 
@@ -119,7 +126,15 @@ a:hover span {
 
 .dropdown a{
   top: 0%;
-  background-color: transparent
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+    top: 0%;
+  background-color: transparent;
+  float: right;
+
 }
 
 
@@ -139,18 +154,13 @@ a:hover span {
 .account {
      width: 25x;
   height:25x;  
-  top: 0%;
-  right: 80%;
-
+  top: 0;
 }
-
-
 .cart a{
   top: 0px;
   background-color: transparent;
   position: absolute;
 }
-
 
 .cart {
   position:absolute;
@@ -161,7 +171,7 @@ a:hover span {
   width: 100px;
   height: 50px;
   height: auto;
- 
+   margin-left: 10px;
   .material-icons {
   position:initial;
   top: 15px;
@@ -195,7 +205,7 @@ a:hover span {
 .dropdown{
   top: 15px;
   float: right;
-  left:92%;
+  right: 8%;
   display: inline-block;
   position: absolute;
   background-color: transparent;
@@ -295,6 +305,10 @@ align-content: center;
   height: 25vh;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   left: 68%;
+}
+
+form a{
+  text-decoration: none;
 }
 
  .item .btn{
@@ -572,6 +586,19 @@ display: none;
 }
 
 @media only screen and(max-device-width: 768px){
+  .topnav-right{
+    width: 50vw;
+    top: 0;
+    position: absolute;
+    float: right;
+    right: 15%;
+   }
+  
+   .cart{
+    right: 1%;
+   }
+
+  
 .cart-item {
     justify-content: space-evenly;
   display:flex;
@@ -603,6 +630,18 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 @media only screen and (max-device-width: 425px) 
 {
   
+  .topnav-right{
+    width: 50vw;
+    top: 0;
+    position: absolute;
+    float: right;
+    right: 10%;
+   }
+  
+   .cart{
+    right: 5%;
+   }
+
 .logo-img {
   position: absolute;
   display: none;
@@ -634,7 +673,7 @@ width: 25px;
   
   .dropdown{
     float: right;
-    left: 80%;
+ margin-right: 10px;
    width: 15px;
   height:15px; 
 }
