@@ -398,6 +398,7 @@ h5{
   background-position: center;
   background-size: cover;
    animation: move-upwards 5s linear infinite;
+
 }
 
 
@@ -519,6 +520,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
+
 @media only screen and (max-device-width: 425px) 
 {
   
@@ -631,7 +633,7 @@ form {
   .footer{
     bottom:0;
     height: 100px;
-    top: 2500px;
+    top: 350%;
   }
 
   .contact-links{
