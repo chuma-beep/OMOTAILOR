@@ -123,6 +123,7 @@ function removeItem(product){
     }
 }
 
+
 //display cart items
   function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
