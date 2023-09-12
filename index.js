@@ -1,9 +1,12 @@
-console.log('Hello')
+function changeBg (){
+  var navbar = document.getElementById("topnav");
+  var scrollValue = window.scrollY;
+   if(scrollValue >= 50){
+      navbar.classList.add('bgColor');
+   }else{
+      navbar.classList.remove("bgColor")
+   }
 
-//const nav = document.querySelector('.topnav');
-function backGround(){
-    var top = window.scrollY;
-     console.log(top)
-}
+  }
 
-window.addEventListener('scroll', backGround);
+  window.addEventListener("scroll", changeBg);
