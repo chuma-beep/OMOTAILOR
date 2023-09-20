@@ -152,20 +152,19 @@ a:hover span {
   float: right;
   display: block;
   background-color: transparent;
+  
 }
 
 
 .cart a{
-  top: 0px;
   background-color: transparent;
   position: absolute;
-  
+  top: 5px;
 }
 
 
 .cart {
   position:absolute;
-  top:0px;
   float: right;
   right: 3%;
   background-color: transparent;
@@ -651,7 +650,7 @@ form {
   .footer{
     bottom:0;
     height: 100px;
-    top: 350%;
+    top: 400%;
   }
 
   .contact-links{
