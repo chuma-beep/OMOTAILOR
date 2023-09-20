@@ -1,4 +1,4 @@
-function changeBg (){
+/*function changeBg (){
   var navbar = document.getElementById("topnav");
   var scrollValue = window.scrollY;
    if(scrollValue >= 50){
@@ -10,3 +10,5 @@ function changeBg (){
   }
 
   window.addEventListener("scroll", changeBg);
+*/
+

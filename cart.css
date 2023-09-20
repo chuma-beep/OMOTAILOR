@@ -267,12 +267,11 @@ button {
   position: absolute;
     display:flex;
   flex-wrap: wrap;
+  flex-direction: row;
   top: 100px;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw;
    height: 100vh;
-    
 }
 
 .flex-container > div {
@@ -352,6 +351,7 @@ flex-direction: row;
     height: 70vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 2vh;
+
 }
 
 .cart-item img{
@@ -365,7 +365,6 @@ height: 70vh;
   position: inherit;
  right: 0;
   margin-top: 0vw;
-
   height: 5vh;
   font-size: 1.5vw;
   background-color: blue;
@@ -422,7 +421,10 @@ form {
   text-align: center;
     margin-bottom: 5px;
 }
-
+.products{
+  margin-left: 50px;
+  margin-top: 100px;
+}
 
 .quantity{
   display: inline-block;
@@ -734,13 +736,10 @@ width: 25px;
   align-items: center;
 }
 
-
 #total .input-txt{
   font-size: 4.5vw;
-  /*width: 20vw;*/
   text-align: center;
 }
-
 
 .item .total-price{
     display:flex;
@@ -764,24 +763,27 @@ width: 25px;
   top: 10vw;
 }
 
+.products{
+  margin-left: 0px;
+}
+
 .cart-cont{ 
 width:100vw;
   margin:0px;
 }
 
 .cart-item{  
-  margin-left:  0px;
    width:90vw;
-    height: 30vh;
+    height: 40vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   left: 0;
- float: left;
 }
 
   .cart-item img{
-    height: 30vh;
+    height: 40vh;
     width: 30vw;
   }
+  
 .price{
   font-size:5vw;
   width: 25vw;

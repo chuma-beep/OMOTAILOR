@@ -1,88 +1,160 @@
+let totalAmount = document.getElementById("input-total"); 
 
-// cart array
-var cart = [];
+let ShoppingCart = document.getElementById("shopping-cart");
 
-//Add to cart
-function addToCart(id) {
-  //check if product already exists in cart
-  if(cart.some((item) => item.id === id)){
-    alert("Product already in cart")
-  }else{
-    const item = products.find((product) => product.id === id);
+let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 
-    cart.push({
-      ...item,
-      numberOfUnits: 1,
-    });
-  }
 
-
-// update cart
-function updateCart(){
-renderCartItems();
-//renderSubtotal();
+let calculation =() => {
+  let cartIcon = document.getElementById("count");
+   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x,y) => x+y, 0);
 }
 
-updateCart();
-}
-
-
-//render cart items
-function renderCartItems(){
-  cart.forEach((item) => {
-    cartItemsEl.innerHTML +=`
-    <div class="cart-item">
-    <div><img id="myImg" src="${item.imgSrc}" alt="${item.name}" />
-    </div>
-    <div class="form-item" id="item-content">
-        <div class="item-txt">
-               <h2>${item.name}</h2>
-          </div>
-      <form>
-         <div class="input">    
-					<input class="price" type="text" id="price" name="price" value="&#8358;${item.price}" readonly>
-          </div>
-        <div class="quantity">
-   <label for="quantity"></label>
-  <div class="quantity-input">
-    <button class="quantity-minus" type="button"onclick="decrement()">-</button>
-    <h5 id="counting">${item.numberOfUnits}</h5>
-    <button class="quantity-plus" type="button" onclick="increment()">+</button>
-  </div>
-        </div>
-        </form>
-   
-    <div class="item-content">
-    <input type="button" class="btn" value="remove item"></input>
+ calculation();
+let generateCartItems = ()=>{
+  if (basket.length !== 0){
+    return (ShoppingCart.innerHTML = basket
+      .map((x) => {
+      let { id, item } = x;
+      let search = storeData.find((y) => y.id === id) || [];
+      return`
+      <div class="cart-item">
+      <div><img id="myImg" src=${search.img} alt=""/>
+      </div>
+      <div class="form-item" id="item-content">
+             <div class="item-txt">
+                 <h2>${search.name}</h2>
+              </div>       
+           <form>
+            <div class="input">    
+                      <input class="price" type="text" id="price" name="price" value="&#8358;${search.price},000" readonly>
              </div>
-       </div>
-  
+            <div class="quantity">
+              <div class="quantity-input">
+               <button class="quantity-minus" type="button" onclick="decrement(${id})">-</button>
+               <div id=${id} class="quantity">${item}</div>
+               <button class="quantity-plus" type="button" onclick="increment(${id})">+</button>
+               </div>
+              </div>
+              <h5>&#8358;${item * search.price},000</h5>
+          </form>
+        
+           <div class="item-content">
+           <input type="button" class="btn remove-item" value="remove item" onclick="removeItem(${id})"></input>
+               </div>
+         </div>
+        </div>
+  </div>
+  `;
+    })
+ .join(""));
+  }else{
+  ShoppingCart.innerHTML = ` `;
+  label.innerHTML= `
+  <h2> Cart is empty </h2>
+  <a href="index.html">
+  </a>
+  `;
+ }
+ };
+ generateCartItems();
+ 
+
+ let increment = (id) =>{
+  let selectedItem = id;
+  let search = basket.find((x) => x.id === selectedItem.id)
+if (search === undefined){
+basket.push({
+  id: selectedItem.id,
+  item: 1,
+});
+}else{
+  search.item += 1;
+}
+generateCartItems();
+update(selectedItem.id);
+localStorage.setItem("data", JSON.stringify(basket));
+};
+
+let decrement = (id) =>{
+  let selectedItem = id;
+  let search = basket.find((x) => x.id === selectedItem.id);
+
+if(search === undefined) return;
+else if (search.x === 0 )return;
+else{
+  search.item -= 1;
+}
+update(selectedItem.id);
+basket = basket.filter((x) => x.item !== 0);
+generateCartItems();
+localStorage.setItem("data", JSON.stringify(basket));
+};
+
+let update = (id) =>{
+  let search = basket.find((x) => x.id === id);
+document.getElementById(id).innerHTML = search.item;
+calculation();
+TotalAmount();
+};
+
+
+
+let removeItem =(id)=>{
+  let selectedItem = id;
+  basket = basket.filter((x) => x.id !== selectedItem.id)
+  generateCartItems();
+  TotalAmount();
+  localStorage.setItem("data", JSON.stringify(basket));
+}
+
+let TotalAmount = ()=>{
+  if(basket.length !==0){
+  let amount = basket.map((x) => {
+    let {item,id} = x;
+    let search = storeData.find((y) => y.id === id) || [];
+    return item * search.price; 
+  }).reduce((x,y) => x+y, 0);
+   totalAmount.innerHTML = `
+   <input type="text" id="total" name="total" value="&#8358;${amount},000"readonly></input>
+   `
+  }else  return;
+};
+TotalAmount();
+
+
+/* return item.innerHTML =`
+ <form class="form">
+  <h2>Total amount</h2>
+  <div class="input-total">
+<input type="text" id="total" name="total" value="&#8358;${search.cartCost},000" readonly>
+   </div>
+<div class="item-content-btn" id="checkout-btn">
+<a href="checkout.html"><input type="button"   class="btn" value="CHECKOUT"></input></a>
 </div>
-`
+</form>
+`;*/
 
-  })
-}
+/**<div class="cart-item">
+      <div><img id="myImg" src=${search.img} alt=${search.name} />
+      </div>
+      <div class="form-item" id="item-content">
+          <div class="item-txt">
+                 <h2>${search.name}</h2>
+            </div>
+        <form>
+           <div class="input">    
+                      <input class="price" type="text" id="price" name="price" value="&#8358;${search.price},000" readonly>
+            </div>
+          <div class="quantity">
+     <!---<label for="submit></label>-->
+    <div class="quantity-input">
+    <button class="quantity-minus" type="button" onclick="decrement(${ id})" class="increment">-</button>
+    <h5 id=${id}>${item}</h5>
+    <button class="quantity-plus" type="button" onclick="increment(${id})">+</button>
 
-
-
-
-/* for the counter*/
-
-//initialising a variable name data
-
-var data = 0;
-
-//printing default value of data that is 0 in h2 tag
-document.getElementById("counting").innerText = data;
-
-//creation of increment function
-function increment() {
-	data = data + 1;
-	document.getElementById("counting").innerText = data;
-}
-//creation of decrement function
-function decrement() {
-	data = data - 1;
-	document.getElementById("counting").innerText = data;
-}
+          </form> */
+/*<button class="quantity-minus" type="button" onclick="decrement(${id})" class="increment">-</button>
+<h5 id=${id} class="quantity">${item}</h5>
+<button class="quantity-plus" type="button" onclick="increment(${id})">+</button>*/

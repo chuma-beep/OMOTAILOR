@@ -272,7 +272,7 @@ button {
   all: unset;
   cursor: pointer;
   width: 44px;
-  height: 44px;
+  height: 30px;
 }
 
 
@@ -301,7 +301,7 @@ width: 100vw;
 .input{
   display: flex;
   flex-direction: row;
-  width: 18vw;
+  width: 24w;
   }
 
 .item1 {
@@ -320,21 +320,6 @@ height: 50vh;
   float: center;
 }   
 
-
- #btn{
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-  margin-top: 0vw;
-  width: 7vw;
-  height: 4vh;
-  font-size: 1.2vw;
-  background-color:blue;
-  color: white;
-   text-align: center;
-  justify-content: center;
-}
-
 .item-content{
   width: 40vw;
   display: flex;
@@ -349,20 +334,53 @@ height: 50vh;
 
 form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   text-align: center;
 }
 
 .price{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  display: in-block;
+  align-self: center;
+  justify-self: center;
   color: black;
   font-size: 2vw;
   }
 
+  .quantity-plus {
+    float: center;
+      background: linear-gradient(to bottom right, #0b8e25, #48f44b);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+   font-size: 1.2vw;
+    font-weight: 500;
+    outline: transparent;
+      text-decoration: none;
+  }
+  
+  .quantity-minus {
+     float: center;
+      background: linear-gradient(to bottom right, #f44848, #ff7575);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+   font-size: 1.2vw;
+    font-weight: 500;
+    outline: transparent;
+      text-decoration: none;
+  
+  }
+  button .quantity-minus {
+  font-size: 1.2vw;
+  }
+
+  .quant{
+    top: 20px;
+  }
 
 
 h5{
