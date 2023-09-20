@@ -1,3 +1,4 @@
+//query selectors
 let totalAmount = document.getElementById("input-total"); 
 
 let ShoppingCart = document.getElementById("shopping-cart");
@@ -5,13 +6,14 @@ let ShoppingCart = document.getElementById("shopping-cart");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 
-
+//calculate items
 let calculation =() => {
   let cartIcon = document.getElementById("count");
    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x,y) => x+y, 0);
 }
 
  calculation();
+ ////generate items 
 let generateCartItems = ()=>{
   if (basket.length !== 0){
     return (ShoppingCart.innerHTML = basket
@@ -60,7 +62,7 @@ let generateCartItems = ()=>{
  };
  generateCartItems();
  
-
+//increase items
  let increment = (id) =>{
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id)
@@ -77,6 +79,7 @@ update(selectedItem.id);
 localStorage.setItem("data", JSON.stringify(basket));
 };
 
+//decrease items
 let decrement = (id) =>{
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -92,6 +95,7 @@ generateCartItems();
 localStorage.setItem("data", JSON.stringify(basket));
 };
 
+//update the changes as the user clicks
 let update = (id) =>{
   let search = basket.find((x) => x.id === id);
 document.getElementById(id).innerHTML = search.item;
@@ -100,7 +104,7 @@ TotalAmount();
 };
 
 
-
+//remove item
 let removeItem =(id)=>{
   let selectedItem = id;
   basket = basket.filter((x) => x.id !== selectedItem.id)
@@ -109,6 +113,7 @@ let removeItem =(id)=>{
   localStorage.setItem("data", JSON.stringify(basket));
 }
 
+//calculate total amount
 let TotalAmount = ()=>{
   if(basket.length !==0){
   let amount = basket.map((x) => {
@@ -123,38 +128,3 @@ let TotalAmount = ()=>{
 };
 TotalAmount();
 
-
-/* return item.innerHTML =`
- <form class="form">
-  <h2>Total amount</h2>
-  <div class="input-total">
-<input type="text" id="total" name="total" value="&#8358;${search.cartCost},000" readonly>
-   </div>
-<div class="item-content-btn" id="checkout-btn">
-<a href="checkout.html"><input type="button"   class="btn" value="CHECKOUT"></input></a>
-</div>
-</form>
-`;*/
-
-/**<div class="cart-item">
-      <div><img id="myImg" src=${search.img} alt=${search.name} />
-      </div>
-      <div class="form-item" id="item-content">
-          <div class="item-txt">
-                 <h2>${search.name}</h2>
-            </div>
-        <form>
-           <div class="input">    
-                      <input class="price" type="text" id="price" name="price" value="&#8358;${search.price},000" readonly>
-            </div>
-          <div class="quantity">
-     <!---<label for="submit></label>-->
-    <div class="quantity-input">
-    <button class="quantity-minus" type="button" onclick="decrement(${ id})" class="increment">-</button>
-    <h5 id=${id}>${item}</h5>
-    <button class="quantity-plus" type="button" onclick="increment(${id})">+</button>
-
-          </form> */
-/*<button class="quantity-minus" type="button" onclick="decrement(${id})" class="increment">-</button>
-<h5 id=${id} class="quantity">${item}</h5>
-<button class="quantity-plus" type="button" onclick="increment(${id})">+</button>*/

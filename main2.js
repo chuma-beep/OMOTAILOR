@@ -1,10 +1,11 @@
+//query selectors
 let prod = document.getElementById('prod-item');
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 
 
-
+//generate crart items
 let generate = () => {
  return  (prod.innerHTML= storeData
     .map((x) => {
@@ -39,6 +40,7 @@ let generate = () => {
 
 generate();
 
+//increment 
 let increment = (id) =>{
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id)
@@ -55,6 +57,7 @@ update(selectedItem.id);
 localStorage.setItem("data", JSON.stringify(basket));
 };
 
+//dcerement
 let decrement = (id) =>{
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
@@ -69,12 +72,14 @@ basket = basket.filter((x) => x.item !== 0);
 localStorage.setItem("data", JSON.stringify(basket));
 };
 
+//update in real time
 let update = (id) =>{
     let search = basket.find((x) => x.id === id);
 document.getElementById(id).innerHTML = search.item;
 calculation();
 };
 
+//calculate
 let calculation =() => {
     let cartIcon = document.getElementById("count");
      cartIcon.innerHTML = basket.map((x) => x.item).reduce((x,y) => x+y,0);
